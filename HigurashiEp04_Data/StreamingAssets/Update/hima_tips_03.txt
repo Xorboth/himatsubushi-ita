@@ -1,0 +1,377 @@
+void main()
+{
+
+//*Sub_Tips_066
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "msys31", 56, 0 );
+
+//■歯車と火事と蜜の味
+
+//　人と人のつながりで営まれている人の世の生活だけど＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人と人のつながりで営まれている人の世の生活だけど。",
+		   NULL, "Il mondo è pieno di gente che riesce a creare tante relazioni sociali.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　全部の人が必ずしもつながっているわけじゃない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　全部の人が必ずしもつながっているわけじゃない。",
+		   NULL, "Ovviamente, questo non significa che tutti siano connessi con tutti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　地球の裏側で名前も知らない誰かが泣いたって笑ったって、自分に何の影響も及ぼさないことなんて、誰もが当然のように理解している＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　地球の裏側で名前も知らない誰かが泣いたって笑ったって、自分に何の影響も及ぼさないことなんて、誰もが当然のように理解している。",
+		   NULL, "Questo perché, magari dall'altra parte del mondo, possono esserci persone che ridono o che piangono e che non avranno mai alcuna influenza su di te.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　だけれども、ご近所という極めて限定された小さなコミュニティに限ってなら、なるほどと頷けないこともない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だけれども、ご近所という極めて限定された小さなコミュニティに限ってなら、なるほどと頷けないこともない。",
+		   NULL, "Tuttavia, nella limitata comunità che è quella del vicinato, questa sorta di legami sono un dato di fatto.", Line_Normal);
+	ClearMessage();
+
+
+//　小さなコミュニティの中でのひとりの印象深い行ないが、全体のその後に大きな影響を及ぼすことはありえるだろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　小さなコミュニティの中でのひとりの印象深い行ないが、全体のその後に大きな影響を及ぼすことはありえるだろう。",
+		   NULL, "È assai probabile che un singolo evento degno di nota possa portare a conseguenze disastrose all'interno di suddetta comunità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　その規模が極めて大きくなれば、……まぁ、地球の裏側の名前も知らない誰かの英雄的演説が、私の生活に影響を及ぼすことがあるかもしれない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その規模が極めて大きくなれば、……まぁ、地球の裏側の名前も知らない誰かの英雄的演説が、私の生活に影響を及ぼすことがあるかもしれない。",
+		   NULL, "Se ingrandiamo il metro di giudizio... una persona del tutto estranea dall'altra parte dell'oceano potrebbe diventare sufficientemente importante da influenzare le nostre vite.", Line_Normal);
+	ClearMessage();
+
+
+//　でも、万事が全てそうなるわけじゃない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、万事が全てそうなるわけじゃない。",
+		   NULL, "Certo, non è sempre così.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　最初に言ったように、基本的には人と人とのつながりは、世間でとかく言うほど顕著じゃない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　最初に言ったように、基本的には人と人とのつながりは、世間でとかく言うほど顕著じゃない。",
+		   NULL, "Come ho detto all'inizio, i legami tra gli esseri umani, di base, non sono poi così vicendevolmente rilevanti nel quadro più ampio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　お向かいの家の晩御飯のおかずが、ハンバーグだろうとコロッケだろうと、私に何の影響も与えないし＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お向かいの家の晩御飯のおかずが、ハンバーグだろうとコロッケだろうと、私に何の影響も与えないし。",
+		   NULL, "Che i vicini preparino una bistecca o delle crocchette non mi influenzerà.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私が靴を履くときに、右足から履こうが左足から履こうが、誰にも何の影響も与えない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私が靴を履くときに、右足から履こうが左足から履こうが、誰にも何の影響も与えない。",
+		   NULL, "Quando mi infilo le scarpe, nessuno subisce delle conseguenze se decido di mettermi prima la destra o la sinistra.", Line_Normal);
+	ClearMessage();
+
+
+//　……ここまでは凡人でも理解できよう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……ここまでは凡人でも理解できよう。",
+		   NULL, "... e fin qui è comprensibile a chiunque.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　でも、現実の実際の本当のところ＠人と人のつながりというやつは、もっともっと白黒がはっきりしているのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、現実の実際の本当のところ。",
+		   NULL, "La verità, però, è un'altra.", Line_WaitForInput);
+	OutputLine(NULL, "人と人のつながりというやつは、もっともっと白黒がはっきりしているのだ。",
+		   NULL, " I legami tra le persone sono ben definiti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　地球の裏側にいるから無関係とか、身近にいるから影響しあうとか、そういう距離の問題じゃなく￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　地球の裏側にいるから無関係とか、身近にいるから影響しあうとか、そういう距離の問題じゃなく。",
+		   NULL, "Non si tratta di una questione di distanza o di vicinanza.", Line_Normal);
+	ClearMessage();
+
+
+//　例えば、Ａという人物の行ないが、私に影響することがあるとする＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　例えば、Ａという人物の行ないが、私に影響することがあるとする。",
+		   NULL, "Per esempio, supponiamo che le azioni di una Persona A abbiano un qualche effetto su di me.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　だからと言って、Ｂという人物の行ないが、必ずしも私に影響を及ぼすことにはならない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だからと言って、Ｂという人物の行ないが、必ずしも私に影響を及ぼすことにはならない。",
+		   NULL, "Al tempo stesso, le azioni di una Persona B non hanno la minima conseguenza sulla mia vita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　逆もまた然り。私の行ないがＡに影響を及ぼすからといって、Ｂに必ず影響を及ぼすとは限らない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　逆もまた然り。私の行ないがＡに影響を及ぼすからといって、Ｂに必ず影響を及ぼすとは限らない。",
+		   NULL, "Vale anche il contrario: se le mie azioni influenzano la vita di A, questo non significa sempre che influenzino anche quella di B.", Line_Normal);
+	ClearMessage();
+
+
+
+//　突き放した言い方をしよう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　突き放した言い方をしよう。",
+		   NULL, "Arriviamo al dunque.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　人と人のつながりや運命が歯車に例えられるなら＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人と人のつながりや運命が歯車に例えられるなら。",
+		   NULL, "Se i legami tra la gente sono come gli ingranaggi di un meccanismo...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私という歯車に噛み合っている人もいれば、いない人もいる、ということだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私という歯車に噛み合っている人もいれば、いない人もいる、ということだ。",
+		   NULL, "l'ingranaggio che mi rappresenta è incastonato in quello di alcune persone, ma isolato da quello di tante altre.", Line_Normal);
+	ClearMessage();
+
+
+
+//　これを詭弁だと反論したい人もいるだろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　これを詭弁だと反論したい人もいるだろう。",
+		   NULL, "Qualcuno ha cercato di ribattere a questa affermazione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そういう人は、やはり時計の歯車の話を引き合いに出す＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういう人は、やはり時計の歯車の話を引き合いに出す。",
+		   NULL, "L'esempio più classico riportato da costoro è quello degli ingranaggi di un orologio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　時計の中にある歯車は確かに、せいぜいひとつかふたつの歯車としか噛み合っていない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　時計の中にある歯車は確かに、せいぜいひとつかふたつの歯車としか噛み合っていない。",
+		   NULL, "È sì vero che ogni ingranaggio è incastonato direttamente solo con un altro paio al massimo...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だけれども、ひとつの歯車を回せば、隣の歯車を動かし、それらが脈々とつながって、最後には全ての歯車を動かすことになると￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だけれども、ひとつの歯車を回せば、隣の歯車を動かし、それらが脈々とつながって、最後には全ての歯車を動かすことになると。",
+		   NULL, "Tuttavia, ruotandone uno, anche l'altro si muove, che a sua volta ne muove un altro, che ne muove un altro ancora e così via, finché tutti gli ingranaggi non si muovono.", Line_Normal);
+	ClearMessage();
+
+//　………確かに理屈はあるし、凡人を納得させるに足る説得力もある＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　………確かに理屈はあるし、凡人を納得させるに足る説得力もある。",
+		   NULL, "... c'è una certa logica in questa affermazione, più che sufficiente per convincere l'interlocutore medio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　では、どうして説得力があるのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　では、どうして説得力があるのか？",
+		   NULL, "Perché è così convincente?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　…答えは簡単＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…答えは簡単。",
+		   NULL, "... la risposta è semplice.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　人と人のつながりなんてあやふやなものを、観念的にしか説明ができないからだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　人と人のつながりなんてあやふやなものを、観念的にしか説明ができないからだ。",
+		   NULL, "Le relazioni tra le persone sono ambigue, e possono solo essere descritte a livello concettuale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　どの歯車がどうつながって、どう連動してどう関係しあってるかなんて、具体的に説明できないから、そんな論法で煙に巻くほかないのだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　どの歯車がどうつながって、どう連動してどう関係しあってるかなんて、具体的に説明できないから、そんな論法で煙に巻くほかないのだ。",
+		   NULL, "Non possiamo portare ad argomentazione come gli ingranaggi siano connessi o come i loro movimenti siano legati l'un l'altro, e perciò questo aspetto viene ignorato.", Line_Normal);
+	ClearMessage();
+
+
+//　では、そんな説明を好む人のために、私もまた時計を引き合いに出して反論しよう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　では、そんな説明を好む人のために、私もまた時計を引き合いに出して反論しよう。",
+		   NULL, "Per chi accetta questa spiegazione, mi permetterò di usare di nuovo l'orologio come esempio per confutarla.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そもそもこの世界を、ひとつの時計に見立てることがまず間違っているのだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそもこの世界を、ひとつの時計に見立てることがまず間違っているのだ。",
+		   NULL, "Per prima cosa, dire che il mondo intero sia un solo orologio è errato.", Line_Normal);
+	ClearMessage();
+
+
+//　時計はひとつじゃない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　時計はひとつじゃない。",
+		   NULL, "Non c'è un solo orologio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　この世界にはたくさんの時計が存在し、個々に時を刻んでいる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　この世界にはたくさんの時計が存在し、個々に時を刻んでいる。",
+		   NULL, "Ma ce ne sono molti, con ognuno che segna la propria ora.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　考えてもごらんなさい、この世に時計はひとつだって決め付けること自体がとても傲慢なこと￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　考えてもごらんなさい、この世に時計はひとつだって決め付けること自体がとても傲慢なこと。",
+		   NULL, "In quest'ottica, l'idea che il mondo sia un solo, grande orologio è il pinnacolo dell'arroganza.", Line_Normal);
+	ClearMessage();
+
+
+//　そうやって考えれば、歯車の話で人のつながりを説明しつつも＠私という歯車とまったく関係のない、他の時計の歯車もたくさんこの世にいることを説明できるだろう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そうやって考えれば、歯車の話で人のつながりを説明しつつも、",
+		   NULL, "Se anche volessimo usare l'analogia degli ingranaggi per spiegare le relazioni umane,", Line_WaitForInput);
+	OutputLine(NULL, "私という歯車とまったく関係のない、他の時計の歯車もたくさんこの世にいることを説明できるだろう。",
+		   NULL, " allora dovremmo essere in grado di spiegarlo anche con un'analogia che tratti molteplici orologi e un solo ingranaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　ご近所のＡとＢ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ご近所のＡとＢ。",
+		   NULL, "I vicini A e B.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　Ａは私と同じ時計の歯車だから、いろいろと気を遣ったほうがいい＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　Ａは私と同じ時計の歯車だから、いろいろと気を遣ったほうがいい。",
+		   NULL, "A è un ingranaggio del mio stesso orologio, quindi è meglio mantenere una buona relazione con lui.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　Ｂは私と違う時計の歯車だから、別にどうでもいい存在＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　Ｂは私と違う時計の歯車だから、別にどうでもいい存在。",
+		   NULL, "B si trova in un orologio diverso, quindi non ho interesse in ciò che fa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そういう、はっきりとした区別￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういう、はっきりとした区別。",
+		   NULL, "Questa è la distinzione di cui sto parlando.", Line_Normal);
+	ClearMessage();
+
+
+//　詭弁だと言いたい￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　詭弁だと言いたい？",
+		   NULL, "Vogliamo metterla in dubbio di nuovo?", Line_Normal);
+	ClearMessage();
+
+
+//　じゃあ理解できるように、時計よりももっと身近な生活の話に置き換えるわね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　じゃあ理解できるように、時計よりももっと身近な生活の話に置き換えるわね。",
+		   NULL, "Allora cambiamo analogia e portiamola su un piano più familiare, così che possiate capire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//『対岸の火事』って言葉くらい、あなただって聞いたことがあるでしょう＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "「対岸の火事」って言葉くらい、あなただって聞いたことがあるでしょう。",
+		   NULL, "Immagino che abbiate sentito almeno una volta il modo di dire locale \"l'incendio sull'altra riva\", giusto?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　例えば、お隣で火事があったら、もちろん消火作業を手伝うでしょう＠　延焼して自分の家にまで火が付いたら困るものね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　例えば、お隣で火事があったら、もちろん消火作業を手伝うでしょう？",
+		   NULL, "Per esempio, se la casa dei vostri vicini prendesse fuoco, voi fareste qualcosa per cercare di aiutarli o per estinguere le fiamme, giusto?", Line_WaitForInput);
+	OutputLine(NULL, "　延焼して自分の家にまで火が付いたら困るものね。",
+		   NULL, " Dopotutto, sarebbe terribile se queste divampassero e bruciassero anche la vostra casa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　でもその火事が川向こうの対岸の町だったらどう￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でもその火事が川向こうの対岸の町だったらどう？",
+		   NULL, "Ma se l'incendio avvenisse in una città dall'altra parte del fiume?", Line_Normal);
+	ClearMessage();
+
+
+//　わざわざ重い腰を上げてまで手伝いに行く＠　行かないわよね＠　間違っても、自分の家まで延焼するわけないものね＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　わざわざ重い腰を上げてまで手伝いに行く？",
+		   NULL, "Andreste comunque a dare una mano?", Line_WaitForInput);
+	OutputLine(NULL, "　行かないわよね？",
+		   NULL, " No, vero?", Line_WaitForInput);
+	OutputLine(NULL, "　間違っても、自分の家まで延焼するわけないものね。",
+		   NULL, " Nonostante siate nel torto, è impossibile che l'incendio si propaghi fino a casa vostra.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　火事になっても、自分の家に燃え移る家と、燃え移らない全然関係のない家があるってこと＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　火事になっても、自分の家に燃え移る家と、燃え移らない全然関係のない家があるってこと。",
+		   NULL, "Se anche diventasse un inferno in terra, non ci sarebbe alcuna relazione tra le case che prendono fuoco e le vostre che, invece, sono al sicuro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　このぐらい具体的な例ならば、自分に関係のある歯車と関係ない歯車の話、少しは理解できるんじゃない？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　このぐらい具体的な例ならば、自分に関係のある歯車と関係ない歯車の話、少しは理解できるんじゃない？　",
+		   NULL, "Con questo esempio di base, dovreste essere in grado di capire la differenza tra ingranaggi che sono collegati e ingranaggi che non lo sono.", Line_Normal);
+	ClearMessage();
+
+
+//　……そういったことが、何も川を隔てなくても世の中にはたくさんあるってこと＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……そういったことが、何も川を隔てなくても世の中にはたくさんあるってこと。",
+		   NULL, "... detto questo, ci sarebbe ancora molto di cui discutere, anche senza un fiume che separi i due ambienti.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　近所とか川向こうとか、そういう距離の問題じゃなくて、ね￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　近所とか川向こうとか、そういう距離の問題じゃなくて、ね？",
+		   NULL, "In fondo, non è certo tutto limitato a un problema di spazio, che sia il vicinato o dall'altra parte del fiume, non trovate?", Line_Normal);
+	ClearMessage();
+
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawScene("black", 1000 );
+//gosub *tip_e
+//return
+
+
+
+}

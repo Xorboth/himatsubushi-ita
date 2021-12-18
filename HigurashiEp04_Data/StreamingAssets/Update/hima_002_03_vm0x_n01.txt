@@ -1,0 +1,171 @@
+
+void main()
+{
+
+}
+
+void dialog000()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700215", 256, TRUE);
+	OutputLine(NULL, "警官辞めても、大企業の営業で十分飯が食えますよ」",
+		   NULL, " Potresti lasciare la polizia e farti un nome come venditore in una grande multinazionale.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「そんないかがわしいところに通った試しなどありません…！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300271", 256, TRUE);
+	OutputLine(NULL, "「まだ警官辞めた後のことなんか、考えたこともありません…！」",
+		   NULL, "\"Non ho mai avuto intenzione di lasciare la polizia...!\"", Line_Normal);
+
+
+//「そこまで過剰に反応されると、…面白いなぁ＠なっはっはっは＠　ちょっとＨな遊びができる店にでも遊びに行きます＠　んっふっふっふ！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700216", 256, TRUE);
+	OutputLine(NULL, "「そこまで過剰に反応されると、…面白いなぁ。",
+		   NULL, "\"Che risposta agitata... interessante.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700217", 256, TRUE);
+	OutputLine(NULL, "なっはっはっは！",
+		   NULL, " Nahahahah!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700218", 256, TRUE);
+	OutputLine(NULL, "　しかし、いけないなぁ。因果な商売ですし今から考えても遅くないですよ。",
+		   NULL, " Secondo me ti sbagli. Fare il piedipiatti non paga abbastanza e sei ancora in tempo per cambiare idea.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700219", 256, TRUE);
+	OutputLine(NULL, "　んっふっふっふ！」",
+		   NULL, " Nfufufu!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog003()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700221", 256, TRUE);
+	OutputLine(NULL, "　それは残念です、じゃ老後の話は次の機会にでも。",
+		   NULL, " Peccato, vorrà dire che ci terremo l'argomento pensione per un'altra volta.", Line_WaitForInput);
+}
+
+void dialog004()
+{
+//「…………今さら野暮なことを聞きますが、…お金、賭けるんですよね…？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300284", 256, TRUE);
+	OutputLine(NULL, "「……今さら野暮なことを聞きますが、…私たち、警察官ですよね…？」",
+		   NULL, "\"... forse domandarlo adesso è da stupidi, ma... siamo tutti poliziotti, vero...?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+}
+
+void dialog005()
+{
+//「まぁ～そりゃあ、ちょびっとね＠なぁに、お遊び程度の額ですよ＠誰が払ったにせよ、そのお金でこの後はい～いお店に遊びに行くのに使いますよ～～＠　むっふっふっふっふ～～！！！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700257", 256, TRUE);
+	OutputLine(NULL, "「まぁ〜それは言いっこ無しで。",
+		   NULL, "\"Suvvia~, mettiamo da parte questo argomento.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700258", 256, TRUE);
+	OutputLine(NULL, "なぁに、実際には賭けるわけじゃありませんよ。",
+		   NULL, " Rilassati, non scommetteremo un bel niente.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700259", 256, TRUE);
+	OutputLine(NULL, "この後い〜いお店に遊びに行く時に、誰が全員分を払うのか決めるだけですって〜〜！",
+		   NULL, " Decideremo solo chi offrirà a tutti più tardi, quando andremo a giocare in un posto davvero divertente~~!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700260", 256, TRUE);
+	OutputLine(NULL, "　むっふっふっふっふ〜〜！！！」",
+		   NULL, " Nfufufufufu~~!!!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+//「……私のお金は先日、大石さんに根こそぎ取られましたし、…私も仕事の都合があるので長居はできないのですが…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300287", 256, TRUE);
+	OutputLine(NULL, "「…私のお金は先日、大石さんに根こそぎ預けて支払いは不可能ですし、…仕事の都合があるので長居はできないのですが…。」",
+		   NULL, "\"... l'altro giorno Ooishi-san si è preso tutti i soldi che avevo, e domani devo tornare al lavoro, quindi non posso rimanere troppo a lungo...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104800005", 256, TRUE);
+	OutputLine(NULL, "　お前が勝ったらこの雀荘の支払いは無しで、蔵人に仕事の話でも何でもすればいい。」",
+		   NULL, " Se vinci, non dovrai pagare il tavolo e potrai parlare con Kuraudo di quel che ti pare.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog008()
+{
+//「……わかりました＠では、少しだけお付き合いします＠私が勝ったら、お金もＨなお店も一切なしで、すぐに仕事の話に入ってもらいますからね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300288", 256, TRUE);
+	OutputLine(NULL, "「……わかりました。",
+		   NULL, "\"... capisco.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300289", 256, TRUE);
+	OutputLine(NULL, "では、少しだけお付き合いします。",
+		   NULL, " Va bene, giocherò un po' insieme a voi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300290", 256, TRUE);
+	OutputLine(NULL, "私が勝ったら、アフターの遊びは一切なしで、すぐに仕事の話に入ってもらいますからね。」",
+		   NULL, " Se vinco, più tardi non andremo da nessuna parte e parleremo immediatamente di quel che mi interessa.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700266", 256, TRUE);
+	OutputLine(NULL, "　私はもちろん馴染みの店をハシゴしまくりですよ？",
+		   NULL, " Ovviamente, salteremo da un locale all'altro!", Line_WaitForInput);
+}
+
+void dialog010()
+{
+//「静かにバニーさんと、足掛けクロスとかできるお店でしょー＠　むははははははは！＠　こないだ飲みに行った時、あんたバニーさんのシッポ引っこ抜いちゃったでしょ＠　あれ結局弁償だったの？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700270", 256, TRUE);
+	OutputLine(NULL, "「静かにバニーさんと、でしょー？",
+		   NULL, "\"Come quello con le conigliette?", Line_WaitForInput);
+}
+
+void dialog011()
+{
+//「マスターに縫製代とか言われて、一本持ってかれたなぁ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>佐藤</color>", NULL, "<color=#f5e6d3>Sato</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104400010", 256, TRUE);
+	OutputLine(NULL, "「マスターに縫製代とか言われて、一本ドンペリ空けられたなぁ。」",
+		   NULL, "\"Il proprietario mi aveva segnato sul conto una bottiglia di Dom Perignon per 'spese di riparazione'.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog012()
+{
+//「……早稲田、高田馬場辺りでだいぶ遊ばせてもらいました＠ちょっとレートを上げすぎて、馴染みの店に出禁を食らいまして＠…今の家内にだいぶ怒られて、足を洗ったんです。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300356", 256, TRUE);
+	OutputLine(NULL, "「……早稲田、高田馬場辺りでだいぶ遊ばせてもらいました。",
+		   NULL, "\"Ho giocato un po' tra Waseda e Takadanobaba.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300357", 256, TRUE);
+	OutputLine(NULL, "ちょっと勝ちまくりすぎて、馴染みの店に出禁を食らいまして。",
+		   NULL, " Il salotto che frequentavo mi bandì perché vincevo troppo spesso.", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog013()
+{
+//「面子にもよりましたが、歌舞伎町辺りで打つときは高目でした＠一番大きいので、デカリャンピンで打ったこともありましたっけ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300359", 256, TRUE);
+	OutputLine(NULL, "「面子にもよりましたが、歌舞伎町辺りで打つときはほぼ負けなしでした。",
+		   NULL, "\"Dipende dagli avversari, ma a Kabikuchou avevo un record di vittorie quasi perfetto.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300360", 256, TRUE);
+	OutputLine(NULL, "特に、相手が「アレ」系の人のときは命かかってましたからね。」",
+		   NULL, " Soprattutto dopo che giocai contro una certa combriccola e mi ritrovai a rischiare la vita.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog014()
+{
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104800053", 256, TRUE);
+	OutputLine(NULL, "　蔵人！！",
+		   NULL, " Kuraudo!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104800054", 256, TRUE);
+	OutputLine(NULL, "　このタコ！！",
+		   NULL, " Razza di stupido!!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104800055", 256, TRUE);
+	OutputLine(NULL, "　お前、どっからこんなプロ雀士みたいなの引っ張ってきたんだ！！",
+		   NULL, " Dove hai trovato questo ragazzino? È ai livelli di un professionista!!", Line_WaitForInput);
+}

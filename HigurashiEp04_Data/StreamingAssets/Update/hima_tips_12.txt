@@ -1,0 +1,488 @@
+void main()
+{
+
+
+//*Sub_Tips_075
+//gosub *tip_s
+
+//■母の日記
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+
+//　私はあの子がどこか好かない＠
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はあの子がどこか好かない。",
+		   NULL, "C'è una cosa che non mi piace di mia figlia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　こうして文字に書き出してみて、初めて自覚する￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　こうして文字に書き出してみて、初めて自覚する。",
+		   NULL, "Me ne sono resa conto quando ho iniziato a tenere questo diario.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	DrawScene("background/nort", 1000 );
+
+
+	PlayBGM( 1, "msys21", 56, 0 );
+
+//　育児書に諭されるまでもなく、子どもは親の人形ではない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　育児書に諭されるまでもなく、子どもは親の人形ではない。",
+		   NULL, "Nei libri di educazione questo fatto non viene mai riportato, ma i figli non sono certo giocattoli dei genitori.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　親の思い通りにならなくなったら愛情を感じなくなるようでは親の資格などない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　親の思い通りにならなくなったら愛情を感じなくなるようでは親の資格などない。",
+		   NULL, "Se questi ultimi non sono in grado di comprendere o apprezzare anche quando i figli non seguono alla lettera le loro indicazioni, allora suddetti genitori hanno fallito nel loro ruolo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そういうのではないのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そういうのではないのだ。",
+		   NULL, "Ma non è questo il punto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　何と言えばいいのか…＠…むしろ文字での方が表現しにくい￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　何と言えばいいのか…。",
+		   NULL, "Come posso dire...", Line_WaitForInput);
+	OutputLine(NULL, "…むしろ文字での方が表現しにくい。",
+		   NULL, " è difficile esprimerlo a parole.", Line_Normal);
+	ClearMessage();
+
+
+//　私は自分の子どもに、平均しか求めていないつもりだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は自分の子どもに、平均しか求めていないつもりだ。",
+		   NULL, "Io voglio che mia figlia sia nella media.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　劣ってさえいなければ、秀でる必要もないと思っている＠年令相応の感性があれば十分と思っている￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　劣ってさえいなければ、秀でる必要もないと思っている。",
+		   NULL, "Finché non rimane troppo indietro, allora non sento il bisogno di farla eccellere per forza in qualcosa.", Line_WaitForInput);
+	OutputLine(NULL, "年令相応の感性があれば十分と思っている。",
+		   NULL, " Finché si comporterà in modo consono alla sua età, non avrò nulla da ridire.", Line_Normal);
+	ClearMessage();
+
+//　でも、あの子は、幼稚園の頃から変わっていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、あの子は、幼稚園の頃から変わっていた。",
+		   NULL, "Ma quella bambina ha iniziato a comportarsi in maniera diversa sin dall'asilo.", Line_Normal);
+	ClearMessage();
+
+
+//　同じ組の子たちが、明日の遠足に興奮を隠せずにはしゃぎ回っている時も、あの子は退屈そうな顔をして、ひとり輪の外にいた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　同じ組の子たちが、明日の遠足に興奮を隠せずにはしゃぎ回っている時も、あの子は退屈そうな顔をして、ひとり輪の外にいた。",
+		   NULL, "Mentre gli altri bambini correvano in giro felici il giorno prima della gita, lei aveva uno sguardo annoiato sul volto, distratto e distaccato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　運動会で使うお遊戯の道具を壊してしまった時も、他の子たちは懸命に誤っていたのに、あの子だけは退屈そうな顔をして、ひとり輪の外にいた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　運動会で使うお遊戯の道具を壊してしまった時も、他の子たちは懸命に謝っていたのに、あの子だけは退屈そうな顔をして、ひとり輪の外にいた。",
+		   NULL, "Mentre gli altri bambini rompevano gli attrezzi per la ginnastica e chiedevano scusa a gran voce, lei aveva uno sguardo annoiato sul volto, distratto e distaccato.", Line_Normal);
+	ClearMessage();
+
+
+//　先生が楽しい絵本を読んでも、あの子だけは笑わない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　先生が楽しい絵本を読んでも、あの子だけは笑わない。",
+		   NULL, "Quando la maestra leggeva un libro illustrato e gli altri bambini ridevano, lei era l'unica a rimanere impassibile.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　おいしいお弁当が出ても、あの子だけは喜ばない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　おいしいお弁当が出ても、あの子だけは喜ばない。",
+		   NULL, "Anche se davano loro da mangiare dei bento deliziosi, solo lei non era felice.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　…これだけなら、まだ理解はできなくもない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…これだけなら、まだ理解はできなくもない。",
+		   NULL, "... se si trattasse solo di questo, potrei almeno capire.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　でも、あの子がわからないのは、…上記とまったく同じようなことがあっても、今度は歳相応に喜んでみせたりするからだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、あの子がわからないのは、…上記とまったく同じようなことがあっても、今度は歳相応に喜んでみせたりするからだ。",
+		   NULL, "Ma ciò che non capisco di quella bambina è che, quando queste stesse situazioni si ripetono di nuovo, allora si comporta come si conviene alla sua età.", Line_Normal);
+	ClearMessage();
+
+
+//　その基準が、親である私にはまったくわからない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　その基準が、親である私にはまったくわからない。",
+		   NULL, "Da genitore, non riesco a comprenderne la logica.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　なぜあの遠足は無関心で、今度の遠足は喜ぶのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜあの遠足は無関心で、今度の遠足は喜ぶのか。",
+		   NULL, "Perché essere indifferenti a questa gita, ma essere al settimo cielo per quest'altra?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　なぜあの絵本は無関心で、今度の絵本は喜ぶのか＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜあの絵本は無関心で、今度の絵本は喜ぶのか。",
+		   NULL, "Perché non ridere di questo libro illustrato, ma ridere a crepapelle di quest'altro?", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　なぜあの弁当は無関心で、今度の弁当は喜ぶのか…￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜあの弁当は無関心で、今度の弁当は喜ぶのか…。",
+		   NULL, "Perché non dire niente di questo bento, ma fare tutti i complimenti del mondo per quest'altro?", Line_Normal);
+	ClearMessage();
+
+//　前者と後者は、私の目にはまったく変わらないように見える＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　前者と後者は、私の目にはまったく変わらないように見える。",
+		   NULL, "Per me, sia la prima che la seconda situazione sono esattamente indentiche.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　…時には、前者の方が優れているように見えることすらある＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…時には、前者の方が優れているように見えることすらある。",
+		   NULL, "... a volte, ho pensato anche che la prima reazione fosse la più adeguata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　あの子の感性が、わからない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子の感性が、わからない。",
+		   NULL, "Non capisco i sentimenti di quella bambina.", Line_Normal);
+	ClearMessage();
+
+
+//　保護者面談でも、先生はまったく同じ胸中を打ち明けた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　保護者面談でも、先生はまったく同じ胸中を打ち明けた。",
+		   NULL, "Durante gli incontri genitori-insegnanti, la maestra ripete sempre la stessa cosa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私もまた、我が子のことがわからないと応え、二人して俯き合った＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私もまた、我が子のことがわからないと応え、二人して俯き合った。",
+		   NULL, "E io ribatto sempre che non capisco mia figlia, al che ci sentiamo a disagio entrambe.", GetGlobalFlag(GLinemodeSp));
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　主人は幼い子の感性は大人と違うから、少しくらい理解できなくても気にしなくていいと楽観的だ＠……危機感に欠けていることを嘆く￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　主人は幼い子の感性は大人と違うから、少しくらい理解できなくても気にしなくていいと楽観的だ。",
+		   NULL, "Mio marito, sempre così ottimista, ha detto che i sentimenti di una bambina sono diversi da quelli di un'adulta, e che quindi è normale che ci siano cose che non capiamo l'una dell'altra.", Line_WaitForInput);
+	OutputLine(NULL, "……危機感に欠けていることを嘆く。",
+		   NULL, " Secondo me, non percepisce la gravità della situazione.", Line_Normal);
+	ClearMessage();
+
+//　私の機嫌が良かったある日＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私の機嫌が良かったある日。",
+		   NULL, "Ricordo un giorno in cui ero di buonumore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　あの子を喜ばそうと、あの子の喜びそうなメニューに腕を振るった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子を喜ばそうと、あの子の喜びそうなメニューに腕を振るった。",
+		   NULL, "Mi sforzai di preparare dei piatti che quella bambina avrebbe apprezzato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　…なのにあの子は、曖昧な表情で、退屈そうに笑うだけだった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…なのにあの子は、曖昧な表情で、退屈そうに笑うだけだった。",
+		   NULL, "... ma la sua unica reazione fu un vago sorriso disinteressato.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私はその様子に直情的に頭に来て、あの子の頭を叩いた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はその様子に直情的に頭に来て、あの子の頭を叩いた。",
+		   NULL, "Quell'atteggiamento mi fece arrabbiare, e la colpii sulla testa.", Line_Normal);
+	ClearMessage();
+
+
+//　お天気の良かったある日＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お天気の良かったある日。",
+		   NULL, "Un giorno in cui c'era bel tempo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　干したばかりの洗濯物が強い風にあおられて、竿台ごとひっくりかえって大変なことになった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　干したばかりの洗濯物が強い風にあおられて、竿台ごとひっくりかえって大変なことになった。",
+		   NULL, "Il bucato che avevo steso ad asciugare venne colpito da una folata improvvisa e cadde insieme ai pali dei fili.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　…なのにあの子は、慌てて洗濯物を拾う私を見て、けたけたと大笑いしていた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…なのにあの子は、慌てて洗濯物を拾う私を見て、けたけたと大笑いしていた。",
+		   NULL, "... lei se ne rimase lì a ridere, mentre mi guardava raccogliere i panni in fretta e furia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私はその様子に直情的に頭に来て、あの子の頭を叩いた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はその様子に直情的に頭に来て、あの子の頭を叩いた。",
+		   NULL, "Quell'atteggiamento mi fece arrabbiare, e la colpii sulla testa.", Line_Normal);
+	ClearMessage();
+
+
+//　そんなことが、何度かあったと思う￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなことが、何度かあったと思う。",
+		   NULL, "Credo che questo genere di cose siano successe un gran numero di volte.", Line_Normal);
+	ClearMessage();
+
+
+//　いつしか、あの子は私に退屈そうな表情しか向けなくなっていった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　いつしか、あの子は私に退屈そうな表情しか向けなくなっていった。",
+		   NULL, "A un certo punto, quella bambina ha cominciato a guardarmi soltanto con la sua solita espressione indifferente.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　……私は悪い母だったことを反省した＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私は悪い母だったことを反省した。",
+		   NULL, "... rimpiango di non essere stata una brava madre.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　我が子との信頼を取り戻すべく、小さなコミュニケーションから少しずつ取り戻していこうと思った￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　我が子との信頼を取り戻すべく、小さなコミュニケーションから少しずつ取り戻していこうと思った。",
+		   NULL, "Volevo riconquistare la sua fiducia, così ho pensato più volte di farlo con delle piccole interazioni, poco alla volta.", Line_Normal);
+	ClearMessage();
+
+//　縁側で、何かの工作をしているあの子に会い、私は声をかける￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　縁側で、何かの工作をしているあの子に会い、私は声をかける。",
+		   NULL, "Vedendola realizzare alcuni oggetti sulla veranda, ho deciso di chiamarla.", Line_Normal);
+	ClearMessage();
+
+
+	PlayBGM( 1, "msys12", 56, 0 );
+
+//「ここ数日、気持ちのいい晴れの日が続いて、気分がいいわね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Mamma di Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44001", 256, TRUE);
+	OutputLine(NULL, "「ここ数日、気持ちのいい晴れの日が続いて、気分がいいわね。」",
+		   NULL, "\"Di recente c'è stato sempre bel tempo. Quest'aria mette davvero il buonumore, non credi?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「…………………。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500030", 256, TRUE);
+	OutputLine(NULL, "「…………………。」",
+		   NULL, "\"......\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　あの子は、…私の大嫌いな、あの退屈そうな表情で私を見上げ、何も応えずに目線を再び手元に戻し、工作に没頭した＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子は、…私の大嫌いな、あの退屈そうな表情で私を見上げ、何も応えずに目線を再び手元に戻し、工作に没頭した。",
+		   NULL, "Quella bambina, con il solito sguardo indifferente che tanto detesto, mi ha guardato per un momento e poi, senza dire una parola, è tornata alle sue cose.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　……今までの私なら、この仕草だけで頭を叩いている＠…ぐっと堪える￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……今までの私なら、この仕草だけで頭を叩いている。",
+		   NULL, "... di norma, l'avrei colpita sulla testa.", Line_WaitForInput);
+	OutputLine(NULL, "…ぐっと堪える。",
+		   NULL, " ... ma mi sono trattenuta.", Line_Normal);
+	ClearMessage();
+
+
+//「何を作ってるの＠　お人形さん？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Mamma di Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44002", 256, TRUE);
+	OutputLine(NULL, "「何を作ってるの？",
+		   NULL, "\"Cosa stai realizzando?", Line_Continue);
+	Wait( 500 );
+	OutputLine(NULL, "　お人形さん？」",
+		   NULL, " Una bambola?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「………てるてる坊主。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500031", 256, TRUE);
+	OutputLine(NULL, "「………てるてる坊主。」",
+		   NULL, "\"...... un teruterubouzu.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　あの子は、新聞の折込広告をうまく使って、てるてる坊主を作っていたのだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子は、新聞の折込広告をうまく使って、てるてる坊主を作っていたのだ。",
+		   NULL, "Quella bambina stava usando gli inserti di un giornale per costruire la bambolina che invoca il bel tempo.", Line_Normal);
+	ClearMessage();
+
+
+//　雨が降るという予報はない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　雨が降るという予報はない。",
+		   NULL, "Le previsioni non avevano annunciato pioggia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　でも、あの子なりに、この清々しい晴れの日が続くことを祈ってのてるてる坊主に違いない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　でも、あの子なりに、この清々しい晴れの日が続くことを祈ってのてるてる坊主に違いない。",
+		   NULL, "Tuttavia, lei aveva ancora intenzione di pregare perché questi giorni di sole continuassero.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　私は、我が子の考えが久しぶりに理解できて、嬉しさを隠せなかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は、我が子の考えが久しぶりに理解できて、嬉しさを隠せなかった。",
+		   NULL, "Finalmente ero riuscita a capire per la prima volta mia figlia, e non riuscivo a nascondere l'emozione.", Line_Normal);
+	ClearMessage();
+
+
+//　毛糸球を持ってきて、我が子の可愛らしいてるてる坊主を軒に吊るしてやった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　毛糸球を持ってきて、我が子の可愛らしいてるてる坊主を軒に吊るしてやった。",
+		   NULL, "Ho preso un gomitolo e l'ho sciolto, poi ne ho tagliato un pezzo per appendere la bambola creata da mia figlia alla stuoia parasole.", Line_Normal);
+	ClearMessage();
+
+
+//「あははは…＠駄目よ梨花＠頭が重すぎるから、ほら＠逆さてるてる坊主になっちゃったわ＠これじゃあ晴れじゃなくて雨になっちゃうわよ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Mamma di Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44003", 256, TRUE);
+	OutputLine(NULL, "「あははは…。",
+		   NULL, "\"Ahahahah...", Line_Continue);
+	Wait( 1000 );
+	OutputLine(NULL, "駄目よ梨花。",
+		   NULL, " non si fa così, Rika.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44004", 256, TRUE);
+	OutputLine(NULL, "頭が重すぎるから、ほら。",
+		   NULL, " La testa è troppo pesante.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44005", 256, TRUE);
+	OutputLine(NULL, "逆さてるてる坊主になっちゃったわ。",
+		   NULL, " Così si usa per pregare perché piova.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44006", 256, TRUE);
+	OutputLine(NULL, "これじゃあ晴れじゃなくて雨になっちゃうわよ。」",
+		   NULL, " Se la tieni a testa in giù, rischi che il bel tempo non continui.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　私がてるてる坊主を外そうとすると、あの子は私に制止を求めるように、裾を引っ張った￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私がてるてる坊主を外そうとすると、あの子は私に制止を求めるように、裾を引っ張った。",
+		   NULL, "Non appena ho cercato di toglierla, mia figlia mi ha tirato per l'orlo della gonna.", Line_Normal);
+	ClearMessage();
+
+
+//「………逆さになるように作ったのだから、それでいいの。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500032", 256, TRUE);
+	OutputLine(NULL, "「………逆さになるように作ったのだから、それでいいの。」",
+		   NULL, "\"...... l'ho fatto apposta perché stesse a testa in giù. Va bene così.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「……………でも梨花＠てるてる坊主が逆さじゃ、晴れのおまじないにならないわよ？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Mamma di Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44007", 256, TRUE);
+	OutputLine(NULL, "「……………でも梨花。",
+		   NULL, "\"... ma, Rika.", Line_Continue);
+	Wait( 1200 );
+	OutputLine(NULL, "てるてる坊主が逆さじゃ、晴れのおまじないにならないわよ？」",
+		   NULL, " Se è rovesciato, non sarà più un teruterubouzu per il bel tempo, lo sai?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「雨が降るようにおまじないをしているから、それでいいの。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500033", 256, TRUE);
+	OutputLine(NULL, "「雨が降るようにおまじないをしているから、それでいいの。」",
+		   NULL, "\"L'ho fatto apposta per la pioggia. Lascialo così.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　…私はこみ上げてくる感情を必死に押さえる。あの子を理解しようと必死に努力する￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…私はこみ上げてくる感情を必死に押さえる。あの子を理解しようと必死に努力する。",
+		   NULL, "... ho cercato disperatamente di tenere a bada le mie emozioni. Stavo cercando davvero con tutto il cuore di comprenderla.", Line_Normal);
+	ClearMessage();
+
+
+//「…あ、……そっか＠お庭の朝顔が晴れ続きで元気がなくなっちゃったから、雨が欲しいのね？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>梨花の母</color>", NULL, "<color=#f5e6d3>Mamma di Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/hurum44008", 256, TRUE);
+	OutputLine(NULL, "「…あ、……そっか。",
+		   NULL, "\"Ah... capisco...", Line_Continue);
+	Wait( 3000 );
+	OutputLine(NULL, "お庭の朝顔が晴れ続きで元気がなくなっちゃったから、雨が欲しいのね？」",
+		   NULL, " I convolvoli in giardino stanno iniziando a seccare a causa del sole, quindi vuoi che venga un po' di pioggia, giusto?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　あの子は、……私の一番嫌いな、あの表情を向けた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子は、……私の一番嫌いな、あの表情を向けた。",
+		   NULL, "Quella bambina si volta verso di me con in volto l'espressione che tanto detesto.", Line_Normal);
+	ClearMessage();
+
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//「晴れにね、…飽きたの。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>Rika</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s20/05/440500034", 256, TRUE);
+	OutputLine(NULL, "「晴れにね、…飽きたの。」",
+		   NULL, "\"Sono stufa... del bel tempo.\"", Line_Normal);
+	ClearMessage();
+
+
+//　……わからない、わからない＠…私にはあの子が、わからない……￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……わからない、わからない。",
+		   NULL, "... non capisco. Non capisco. Non capisco.", Line_WaitForInput);
+	OutputLine(NULL, "…私にはあの子が、わからない……。",
+		   NULL, " ... non riesco a comprendere quella bambina...", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

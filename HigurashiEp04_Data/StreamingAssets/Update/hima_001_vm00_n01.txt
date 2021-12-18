@@ -1,0 +1,91 @@
+
+void main()
+{
+}
+
+void dialog000()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104200017", 256, TRUE);
+	OutputLine(NULL, "残る各職員は担当団体ごとに本件との関連を調査。",
+		   NULL, "Il resto di voi investighi su ogni pista legata a questo caso in base all'unità a cui siete assegnati.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104200018", 256, TRUE);
+	OutputLine(NULL, "日共、赤軍、連合のラインは集中的にやれ！",
+		   NULL, " Concentratevi sul Partito Comunista, sulla Sekigun e sui sindacati!", GetGlobalFlag(GLinemodeSp));
+}
+
+void dialog001()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/vv_kano_10001", 256, TRUE);
+	OutputLine(NULL, "「……に行ってくれ。",
+		   NULL, "\"--e si occuperà di quello.", Line_WaitForInput);
+}
+
+void dialog002()
+{
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104300010", 256, TRUE);
+	OutputLine(NULL, "違法行為を以て主張を通そうとする危険性は、十分にありますね。」",
+		   NULL, " Posso dire con relativa certezza che ricorreranno anche a metodi illeciti per ottenere ciò che vogliono.\"", Line_Normal);
+	ClearMessage();
+}
+
+void dialog003()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300019", 256, TRUE);
+	OutputLine(NULL, "「具体的に、鬼ヶ淵死守同盟が行った違法行為を教えていただけますか？」",
+		   NULL, "\"Posso avere qualche dettaglio sulle attività illecite che i Guardiani di Onigafuchi hanno compiuto?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog004()
+{
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300034", 256, TRUE);
+	OutputLine(NULL, "　被差別部落のことですか？」",
+		   NULL, " Appartengono ai burakumin?\" [Discendenti di famiglie che erano considerate fuoricasta a causa del lavoro che facevano (macellai, becchini eccetera).]", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+void dialog005()
+{
+	ModPlayVoiceLS(4, 0, "ps3/s05/00/104200035", 256, TRUE);
+	OutputLine(NULL, "××県警での情報収集はどうですか。」",
+		   NULL, " Come va la raccolta di informazioni al Dipartimento Prefetturale di XX?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog006()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300085", 256, TRUE);
+	OutputLine(NULL, "「…まるで、中東辺りの内戦の国に迷い込んだような錯覚です。」",
+		   NULL, "\"... è come se fossimo finiti nel bel mezzo di una guerra civile in Medio Oriente.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog007()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700162", 256, TRUE);
+	OutputLine(NULL, "それに、あなたのお陰で雀荘のツケを全部返せるんですからねぇ。",
+		   NULL, " In più, grazie a te potrò ripagare i debiti che ho accumulato con il mahjong.", Line_WaitForInput);
+}
+
+void dialog008()
+{
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700175", 256, TRUE);
+	OutputLine(NULL, "どんなささやかなケチでもひとつ付けば、…左派政党がどっと票を伸ばす可能性もある、と。」",
+		   NULL, "Basta fare un passo falso perché i partiti di sinistra ottengano di colpo più voti.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+}
+
+void dialog009()
+{
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700207", 256, TRUE);
+	OutputLine(NULL, "…………今時の若者はこんな迷信、信じませんがね。",
+		   NULL, "... forse i giovani non credono alle superstizioni,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700208", 256, TRUE);
+	OutputLine(NULL, "興宮の明治生まれの年寄り連中には、今でも盲信してるのが多いですよ。」",
+		   NULL, " ma per questa gente di campagna, nata a Okinomiya nell'era Meiji, certi avvertimenti sono definitivi.\"", Line_Normal);
+	ClearMessage();
+}

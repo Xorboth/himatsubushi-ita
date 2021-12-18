@@ -1,0 +1,64 @@
+[HIGURASHI CAP. 4 HIMATSUBUSHI - TRADUZIONE ITALIANA]
+[VERSIONE 1.0.0]
+
+Il team di CTH Translations è lieto di fornirvi la traduzione italiana di Higurashi Capitolo 4 - Himatsubushi!
+La traduzione si basa sull'incredibile lavoro di 07th-Mod che permette di aggiungere molte feature al gioco base, tra le quali il doppiaggio e la grafica migliorata.
+
+Potete contattarci attraverso la nostra pagina Facebook:
+https://facebook.com/CTHTranslations
+
+Per avere un contatto più diretto con noi potete entrare nel nostro server Discord, dove si parla delle traduzioni in corso e si fornisce supporto tecnico:
+https://discord.gg/nNHQxZ7
+
+Per informazioni più tecniche sul progetto puoi visitare la pagina GitHub del nostro repository:
+https://github.com/Xorboth/himatsubushi-ita
+
+
+[INSTALLAZIONE SEMPLIFICATA]
+
+1) Scaricare ed installare il gioco da Steam, GOG o MangaGamer:
+https://store.steampowered.com/app/526490/Higurashi_When_They_Cry_Hou__Ch4_Himatsubushi
+https://www.gog.com/game/higurashi_when_they_cry_hou_ch4_himatsubushi
+https://www.mangagamer.com/detail.php?product_code=189
+
+2) Scaricare ed aprire il 07th-Mod Installer:
+https://github.com/07th-mod/python-patcher/releases/latest
+
+3) Fare partire il menu di configurazione per l'installazione della patch per Himatsubushi, mettendo la spunta sulla voce della traduzione italiana
+
+4) Installare la patch
+
+5) Finito!
+
+
+[INSTALLAZIONE MANUALE]
+
+1) Scaricare ed installare il gioco da Steam, GOG o MangaGamer:
+https://store.steampowered.com/app/526490/Higurashi_When_They_Cry_Hou__Ch4_Himatsubushi
+https://www.gog.com/game/higurashi_when_they_cry_hou_ch4_himatsubushi
+https://www.mangagamer.com/detail.php?product_code=189
+
+2) Installare la patch inglese per Himatsubushi di 07th-Mod attraverso il 07th-Mod Installer:
+https://github.com/07th-mod/python-patcher/releases/latest
+
+3) Aprire la cartella del gioco (su Steam ad esempio sta in "Steam\steamapps\common\Higurashi 04 - Himatsubushi")
+
+4) Copiare la cartella della traduzione italiana "HigurashiEp04_Data" nella cartella del gioco, dove c'è un'altra cartella con lo stesso identico nome
+
+5) Sostituire i file quando richiesto. Se non dovesse venire richiesto significa che probabilmente si è scelta la cartella sbagliata dove incollare il contenuto della traduzione
+
+6) Aprire la cartella "Higurashi 04 - Himatsubushi\HigurashiEp04_Data\StreamingAssets\CompiledUpdateScripts" ed eliminare tutti i file al suo interno
+
+7) Finito!
+
+
+[PROBLEMI NOTI]
+
+- I menu di configurazione aggiunti da 07th-Mod (come la scelta dell'OST tra originale e aggiornata) non sono attualmente traducibili in quanto il testo è hardcoded all'interno della DLL usata dalla mod
+
+
+[CREDITI]
+
+Ringraziamo infinitamente il team di 07th-Mod per la loro incredibile patch e grandissimo supporto che ci ha permesso di portarvi la traduzione italiana che vedete oggi.
+
+Traduzione italiana a cura di CTH Translations

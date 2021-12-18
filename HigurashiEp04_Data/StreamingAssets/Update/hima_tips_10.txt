@@ -1,0 +1,533 @@
+void main()
+{
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+
+//*Sub_Tips_073
+//gosub *tip_s
+	PlayBGM( 1, "msys12", 56, 0 );
+//■鬼の目にも何とか
+
+//gosub *Ch_Mi_Si
+
+	DisableWindow();
+	DrawSceneWithMask("background/heya1", "m1", 0, 0, 300 );
+
+//「…えぇ、ハイ＠…それでお通夜が明日の午後６時からになりまして、告別式が明後日のお昼、１２時から１３時までになりまして＠会場は興宮セレモニホールになります…。￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Rappresentante del Governo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44001", 256, TRUE);
+	OutputLine(NULL, "「…えぇ、ハイ。",
+		   NULL, "\"... sì, certo.", Line_Continue);
+	Wait( 1200 );
+	OutputLine(NULL, "…それでお通夜が明日の午後６時からになりまして、告別式が明後日のお昼、１２時から１３時までになりまして。",
+		   NULL, " ... quindi la veglia sarà dalle sei di sera di domani, mentre la cerimonia si terrà il giorno dopo da mezzogiorno all'una.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44002", 256, TRUE);
+	OutputLine(NULL, "会場は興宮セレモニホールになります…。」",
+		   NULL, " Si terrà alla Camera Ardente di Okinomiya...\"", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 17, "sprite/oryou_def_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
+//「…すっかぁ＠池澤助役のお孫さんの葬式じゃあ、何にも挨拶なしってわけにもいかんね＠魅音、代わりに出てぇな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300026", 256, TRUE);
+	OutputLine(NULL, "「…すっかぁ。",
+		   NULL, "\"... capisco.", Line_Continue);
+	Wait( 2000 );
+	OutputLine(NULL, "池澤助役のお孫さんの葬式じゃあ、何にも挨拶なしってわけにもいかんね。",
+		   NULL, " Si tratta pur sempre del funerale del nipote del vicesindaco Ikezawa. Dobbiamo porgergli i nostri omaggi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300027", 256, TRUE);
+	OutputLine(NULL, "魅音、代わりに出てぇな。」",
+		   NULL, " Mion, andrai tu in mia vece.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModSetLayerFilter(1, 256, "none");
+	ModDrawCharacterWithFiltering(1, 26, "sprite/chibimion_def_", "0", "left", 1, -160, 0, FALSE, 0, 0, 0, 0, 0, 0, 300, TRUE );
+
+//「うん、了解＠喪服で行く＠　香典はいくらくらい？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300114", 256, TRUE);
+	OutputLine(NULL, "「うん、了解。",
+		   NULL, "\"Sì, va bene.", Line_Continue);
+	Wait( 1400 );
+	OutputLine(NULL, "喪服で行く？",
+		   NULL, " Metto gli abiti da funerale?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300115", 256, TRUE);
+	OutputLine(NULL, "　香典はいくらくらい？」",
+		   NULL, " Quanto devo portare per l'offerta?\" [In Giappone è uso donare un'offerta pecuniaria ai familiari del defunto.]", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「学校の服でえんね＠前のボタンはちゃあんと止めてくんねよ＠香典は、５万、!w1000……ん～、１０万包んだれな＠世話になったかんなぁ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300028", 256, TRUE);
+	OutputLine(NULL, "「学校の服でえんね。",
+		   NULL, "\"Va' pure con l'uniforme scolastica.", Line_Continue);
+	Wait( 2500 );
+	OutputLine(NULL, "前のボタンはちゃあんと止めてくんねよ。",
+		   NULL, " Abbottonala bene fino in cima.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300029", 256, TRUE);
+	OutputLine(NULL, "香典は、５万、",
+		   NULL, " Per i soldi, cinquanta--", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 2200 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……ん〜、１０万包んだれな。",
+		   NULL, " anzi... centomila yen.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300030", 256, TRUE);
+	OutputLine(NULL, "世話になったかんなぁ。」",
+		   NULL, " Hanno fatto molto per noi in passato.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(1, 26, "sprite/chibimion_wink_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//　魅音は奮発した香典の額に、小さく口笛を吹いて感嘆する￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は奮発した香典の額に、小さく口笛を吹いて感嘆する。",
+		   NULL, "Mion fa un fischio di sorpresa sentendo la somma esorbitante che sua nonna ha intenzione di porgere.", Line_Normal);
+	ClearMessage();
+
+
+//「…池澤さんはなぁ、興宮の事務所長だった頃からしっかりした人だったんね＠…役人は挨拶って言っても、絶対に玄関までしか来ん＠でもな、池澤さんはワシがお茶を勧めると、いっつも上がってくれて、ちゃあんと話を聞いてくれたん＠…人の話を最後まで聞く、本当に鑑みたいな人だったんね。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300031", 256, TRUE);
+	OutputLine(NULL, "「…池澤さんはなぁ、興宮の事務所長だった頃からしっかりした人だったんね。",
+		   NULL, "\"Ikezawa-san è sempre stato un uomo prudente sin dai giorni in cui dirigeva il Municipio di Okinomiya.", Line_Continue);
+	Wait( 8000 );
+	OutputLine(NULL, "…役人は挨拶って言っても、絶対に玄関までしか来ん。",
+		   NULL, " ... tutti quei burocrati restano fuori dalla porta ogni volta che vengono a farmi visita.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300032", 256, TRUE);
+	OutputLine(NULL, "でもな、池澤さんはワシがお茶を勧めると、いっつも上がってくれて、ちゃあんと話を聞いてくれたん。",
+		   NULL, "Tuttavia, ogni volta che offrivo una tazza di tè a Ikezawa-san, lui entrava e ascoltava attentamente ciò che avevo da dirgli.", Line_Continue);
+	Wait( 8000 );
+	OutputLine(NULL, "…人の話を最後まで聞く、本当に鑑みたいな人だったんね。」",
+		   NULL, " ... ha sempre dato ascolto alle richieste della gente. Bisognerebbe prendere esempio da uno come lui.\"", Line_Normal);
+	ClearMessage();
+
+
+//　客人であるはずの二人は、お魎の昔話に、大仰に頷いたり相槌を打ったりしている＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　客人であるはずの二人は、お魎の昔話に、大仰に頷いたり相槌を打ったりしている。",
+		   NULL, "I due ospiti fanno un cenno della testa, facendo intendere che sono d'accordo con le parole di Oryou.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　お魎の機嫌を損ねまいとしている様子が傍目にはとても滑稽で、時に魅音はその様子を小さく笑っていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お魎の機嫌を損ねまいとしている様子が傍目にはとても滑稽で、時に魅音はその様子を小さく笑っていた。",
+		   NULL, "La scena dei due che cercano di non inimicarsi Oryou è come uno spettacolo comico per Mion, che trattiene a malapena le risate.", Line_Normal);
+	ClearMessage();
+
+
+
+//「で、池澤助役のお孫さんは、いくつで亡くなったんね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300033", 256, TRUE);
+	OutputLine(NULL, "「で、池澤助役のお孫さんは、いくつで亡くなったんね。」",
+		   NULL, "\"Quanti anni aveva il nipote del Vicesindaco Ikezawa?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「…えぇと、!w1000……１１歳だそうで…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Rappresentante del Governo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44003", 256, TRUE);
+	OutputLine(NULL, "「…えぇと、",
+		   NULL, "\"... uhm...", Line_Continue);
+
+	// (backup) SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	// (backup) SetValidityOfInput( TRUE );
+
+	OutputLine(NULL, "……１１歳だそうで…。」",
+		   NULL, " undici, mi pare...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+	DisableWindow();
+	ModDrawCharacter(3, 17, "sprite/oryou_shinken_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+
+//　お魎は目を伏せると、小さく首を横に振りながら、若い命が没したことを悔やむ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お魎は目を伏せると、小さく首を横に振りながら、若い命が没したことを悔やむ。",
+		   NULL, "Oryou chiude gli occhi e scuote debolmente la testa, lamentando la perdita di una così giovane vita.", Line_Normal);
+	ClearMessage();
+
+
+//「確か、孫はひとりだ言うてんなぁ……＠…かぁわいそうになぁ…＠親より先に死ぬほどの親不孝はあるんめな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300034", 256, TRUE);
+	OutputLine(NULL, "「確か、孫はひとりだ言うてんなぁ……。",
+		   NULL, "\"Se ben ricordo, aveva detto di avere un solo nipote...", Line_Continue);
+	Wait( 6500 );
+	OutputLine(NULL, "…かぁわいそうになぁ…。",
+		   NULL, " ... quanta pena...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300035", 256, TRUE);
+	OutputLine(NULL, "親より先に死ぬほどの親不孝はあるんめな。」",
+		   NULL, " non c'è niente di peggio di un genitore che vede morire il proprio figlio prima di lui.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(1, 26, "sprite/chibimion_warai_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 200, TRUE );
+
+//「あははははは＠婆っちゃも他人にゃやさしいね＠私や詩音が死んだら、同じ様に悲しんでくれる？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300116", 256, TRUE);
+	OutputLine(NULL, "「あははははは。",
+		   NULL, "\"Ahahahahah.", Line_Continue);
+	Wait( 1000 );
+	OutputLine(NULL, "婆っちゃも他人にゃやさしいね。",
+		   NULL, " Sei davvero gentile con gli altri, nonna.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300117", 256, TRUE);
+	OutputLine(NULL, "私や詩音が死んだら、同じ様に悲しんでくれる？」",
+		   NULL, " Se io o Shion morissimo, saresti altrettanto triste?\"", Line_Normal);
+	ClearMessage();
+
+
+
+//「あほン抜かすでね＠縁起でもねすったらんと、しゃあらわんわったく！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300036", 256, TRUE);
+	OutputLine(NULL, "「あほン抜かすでね。",
+		   NULL, "\"Non dire stupidaggini.", Line_Continue);
+	Wait( 1500 );
+	OutputLine(NULL, "縁起でもねすったらんと、しゃあらわんわったく！」",
+		   NULL, " Anche solo dire certe cose porta sfortuna!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　魅音は予想通りの反応だったのことが面白いらしく、けたけたと笑っていた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は予想通りの反応だったのことが面白いらしく、けたけたと笑っていた。",
+		   NULL, "Ottenuta la reazione che desiderava, Mion ridacchia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　客人二人は、一緒になって笑ってもいいものか分かりかね、苦しい笑顔をしていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　客人二人は、一緒になって笑ってもいいものか分かりかね、苦しい笑顔をしていた。",
+		   NULL, "I due ospiti, incerti se ridere o meno, si limitano a dei sorrisi imbarazzati.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("black", 400 );
+	DrawSceneWithMask("background/so_g1", "up", 0, 0, 300 );
+
+//「それでは本日は失礼いたします…＠では、明日の夕方５時にお迎えに参りますんで＠よろしくお願いいたします…＠では、ごめんくださいませ……。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>役人</color>", NULL, "<color=#f5e6d3>Rappresentante del Governo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44004", 256, TRUE);
+	OutputLine(NULL, "「それでは本日は失礼いたします…。",
+		   NULL, "\"Allora, per noi è ora di andare...", Line_Continue);
+	Wait( 2400 );
+	OutputLine(NULL, "では、明日の夕方５時にお迎えに参りますんで。",
+		   NULL, " verremo a prenderla domani alle cinque.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44005", 256, TRUE);
+	OutputLine(NULL, "よろしくお願いいたします…。",
+		   NULL, " La ringraziamo della sua presenza...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kanryoc44006", 256, TRUE);
+	OutputLine(NULL, "では、ごめんくださいませ……。」",
+		   NULL, " con permesso...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　客人たちはぺこぺこと何度も頭を下げると、玄関を出て行った＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　客人たちはぺこぺこと何度も頭を下げると、玄関を出て行った。",
+		   NULL, "Fatto un profondo inchino, gli ospiti lasciano la stanza dall'ingresso principale.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　魅音はそれにヒラヒラと手を振って送り出す￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音はそれにヒラヒラと手を振って送り出す。",
+		   NULL, "Mion li saluta con un gesto della mano.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("white", 400 );
+	ModDrawCharacter(1, 26, "sprite/chibimion_wink_", "1", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 0, 0, FALSE );
+	DrawSceneWithMask("background/rouka1", "left", 0, 0, 300 );
+
+//「……帰ったよ＠…お役人も婆っちゃのご機嫌伺いに大変だねぇ＠訃報なんか電話でいいと思うのにねぇ＠くっくっく…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300118", 256, TRUE);
+	OutputLine(NULL, "「……帰ったよ。",
+		   NULL, "\"... se ne sono andati.", Line_Continue);
+	Wait( 1200 );
+	OutputLine(NULL, "…お役人も婆っちゃのご機嫌伺いに大変だねぇ。",
+		   NULL, " ... chissà come si sentono sotto pressione quando vengono a farti queste visite di cortesia, nonna.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300119", 256, TRUE);
+	OutputLine(NULL, "訃報なんか電話でいいと思うのにねぇ。",
+		   NULL, " Avrebbero potuto dircelo via telefono e basta.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300120", 256, TRUE);
+	OutputLine(NULL, "くっくっく…。」",
+		   NULL, " Uhuhuh...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まぁ、確かに園崎お魎は、雛見沢村の住民、親族を全てまとめている＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まぁ、確かに園崎お魎は、雛見沢村の住民、親族を全てまとめている。",
+		   NULL, "Beh, è vero che Oryou Sonozaki è una figura chiave per i suoi famigliari e per tutti i residenti del villaggio di Hinamizawa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　票に直せば数千票＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　票に直せば数千票。",
+		   NULL, "Al momento del voto, si parla di parecchie migliaia.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　市長が、ゴマをすりたくなるのも分からなくはない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　市長が、ゴマをすりたくなるのも分からなくはない。",
+		   NULL, "Non è difficile immaginare che il sindaco voglia tenersela alleata.", Line_Normal);
+	ClearMessage();
+
+
+//　だが、お魎は魅音とは違い、寂しそうな表情で縁側で空を見上げていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、お魎は魅音とは違い、寂しそうな表情で縁側で空を見上げていた。",
+		   NULL, "A differenza di Mion, tuttavia, Oryou ha lo sguardo assente e sta fissando il cielo fuori dalla veranda.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("white", 400 );
+	DrawSceneWithMask("background/sora", "up", 0, 0, 300 );
+
+//「どしたの＠　もうろくした＠　あははははは！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300121", 256, TRUE);
+	OutputLine(NULL, "「どしたの？",
+		   NULL, "\"Che cosa c'è?", Line_Continue);
+	Wait( 1000 );
+	OutputLine(NULL, "　もうろくした？",
+		   NULL, " Stai finalmente perdendo la testa?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300122", 256, TRUE);
+	OutputLine(NULL, "　あははははは！」",
+		   NULL, " Ahahahahah!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「……誰のお孫さんであろうと、…気の毒だんの、思ったんよ…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300037", 256, TRUE);
+	OutputLine(NULL, "「……誰のお孫さんであろうと、…気の毒だんの、思ったんよ…。」",
+		   NULL, "\"... stavo solo pensando che perdere un nipote, di chiunque esso sia... addolora anche me...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　そう言い、深いため息を吐いた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そう言い、深いため息を吐いた。",
+		   NULL, "Detto questo, l'anziana tira un profondo sospiro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+//　普段なら小馬鹿にする魅音に叱り付けるような口調で返すはずなので、魅音も拍子抜けする…￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　普段なら小馬鹿にする魅音に叱り付けるような口調で返すはずなので、魅音も拍子抜けする…。",
+		   NULL, "Mion è un po' delusa che sua nonna non l'abbia rimproverata come fa di solito.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("background/rouka1", 400 );
+
+//「魅音＠……ほれ、……例の大臣の孫＠さらわれてからどのくらいになるん？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300038", 256, TRUE);
+	OutputLine(NULL, "「魅音。",
+		   NULL, "\"Mion.", Line_Continue);
+	Wait( 2000 );
+	OutputLine(NULL, "……ほれ、……例の大臣の孫。",
+		   NULL, " ... ascolta... il nipote del Ministro...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300039", 256, TRUE);
+	OutputLine(NULL, "さらわれてからどのくらいになるん？」",
+		   NULL, " da quanto tempo è stato rapito?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModSetLayerFilter(2, 256, "none");
+	ModDrawCharacterWithFiltering(2, 26, "sprite/chibimion_def_", "0", "left", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 10, 300, TRUE );
+
+//「ん＠……………４日、…かな？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300123", 256, TRUE);
+	OutputLine(NULL, "「ん。",
+		   NULL, "\"Uhm.", Line_Continue);
+	Wait( 800 );
+	OutputLine(NULL, "……………４日、…かな？」",
+		   NULL, " ... da quattro giorni, se non sbaglio.\"", Line_Normal);
+	ClearMessage();
+
+
+//　お魎はもう一度、深いため息を吐き出した￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お魎はもう一度、深いため息を吐き出した。",
+		   NULL, "Oryou sospira di nuovo.", Line_Normal);
+	ClearMessage();
+
+
+//「仇敵の孫とは言え、………気の毒だんなぁ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300040", 256, TRUE);
+	OutputLine(NULL, "「仇敵の孫とは言え、………気の毒だんなぁ。」",
+		   NULL, "\"Sarà anche il nipote del nostro peggior nemico... ma mi dispiace molto per lui.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「…………………………そう？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300124", 256, TRUE);
+	OutputLine(NULL, "「…………………………そう？」",
+		   NULL, "\"... sul serio?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+
+	FadeOutBGM( 1, 1000, TRUE );
+
+//「充分、灸は据えたんろ＠…………そろそろ終わりにしちゃれな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300041", 256, TRUE);
+	OutputLine(NULL, "「充分、灸は据えたんろ。",
+		   NULL, "\"Il nostro avvertimento è stato abbastanza chiaro.", Line_Continue);
+	Wait( 4000 );
+	OutputLine(NULL, "…………そろそろ終わりにしちゃれな。」",
+		   NULL, " ... può bastare così.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+	DisableWindow();
+	ModDrawCharacter(2, 26, "sprite/chibimion_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 200, TRUE );
+
+//「…………………………。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300125", 256, TRUE);
+	OutputLine(NULL, "「…………………………。」",
+		   NULL, "\"...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　魅音の表情からは、ふざけた雰囲気は一切抜け、…いつの間にか冷え切ったものになっていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音の表情からは、ふざけた雰囲気は一切抜け、…いつの間にか冷え切ったものになっていた。",
+		   NULL, "L'espressione maliziosa sul volto di Mion svanisce di colpo, lasciando spazio a uno sguardo più austero.", Line_Normal);
+	ClearMessage();
+
+
+//　そして、お魎の真意を測るように、その目を覗き込む＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして、お魎の真意を測るように、その目を覗き込む。",
+		   NULL, "Poi, come se volesse accertarsi del desiderio di Oryou, la fissa dritta negli occhi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　……お魎もまた、自分の意思を目だけで語ろうと、魅音の目を覗き返していた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……お魎もまた、自分の意思を目だけで語ろうと、魅音の目を覗き返していた。",
+		   NULL, "... Oryou, anch'essa con un solo gesto degli occhi, ricambia lo sguardo di Mion.", Line_Normal);
+	ClearMessage();
+
+
+	PlayBGM( 1, "msys11", 56, 0 );
+
+//「…………………………お茶が欲しんて頼んでぇな＠さっきのチョコレートも食べといね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300042", 256, TRUE);
+	OutputLine(NULL, "「…………………………お茶が欲しんて頼んでぇな。",
+		   NULL, "\"... potresti portarmi del tè?", Line_Continue);
+	Wait( 2800 );
+	OutputLine(NULL, "さっきのチョコレートも食べといね。」",
+		   NULL, " E anche un po' di cioccolata.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　魅音は小さく頷くと踵を返した￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は小さく頷くと踵を返した。",
+		   NULL, "Mion fa un leggero cenno del capo e si volta.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	FadeBustshotWithFiltering( 2, "right", 1, FALSE, 0, 0, 300, TRUE );
+
+//「沁子さん、いますか～～＠　婆っちゃに紅茶、入れてあげて下さい～～！＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300126", 256, TRUE);
+	OutputLine(NULL, "「沁子さん、いますか〜〜？",
+		   NULL, "\"Shimiko-san, ci sei?", Line_Continue);
+	Wait( 2000 );
+	OutputLine(NULL, "　婆っちゃに紅茶、入れてあげて下さい〜〜！」",
+		   NULL, " La nonna vuole del tè, per favore~!\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　遠くでお手伝いさんの、は～～い…という声が応える￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　遠くでお手伝いさんの、は〜〜い…という声が応える。",
+		   NULL, "In lontananza, una voce risponde che sarà pronto tra un attimo.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawSceneWithMask("black", "right", 0, 0, 300 );
+
+//　魅音は、自分の声が届いたことを確認すると、受話器を取りダイヤルする￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　魅音は、自分の声が届いたことを確認すると、受話器を取りダイヤルする。",
+		   NULL, "Mion, recepita la risposta, prende il telefono e compone un numero.", Line_Normal);
+	ClearMessage();
+	DisableWindow();
+	ModDrawCharacter(2, 26, "sprite/chibimion_shinken_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 10, 0, FALSE );
+	DrawSceneWithMask("background/so_g1", "up", 0, 0, 300 );
+
+
+//「……………………あ、もしもし＠魅音だけど＠…うん＠…うちのお父さん、います？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>魅音</color>", NULL, "<color=#5ec69a>Mion</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300127", 256, TRUE);
+	OutputLine(NULL, "「……………………あ、もしもし。",
+		   NULL, "\"... sì, pronto?", Line_Continue);
+	Wait( 800 );
+	OutputLine(NULL, "魅音だけど。",
+		   NULL, " Sono Mion.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300128", 256, TRUE);
+	OutputLine(NULL, "…うん。",
+		   NULL, " ... già.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 26, "ps3/s20/26/440300129", 256, TRUE);
+	OutputLine(NULL, "…うちのお父さん、います？」",
+		   NULL, " ... c'è mio padre per caso?\"", Line_Normal);
+	ClearMessage();
+
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

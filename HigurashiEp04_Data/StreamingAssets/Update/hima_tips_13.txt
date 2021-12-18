@@ -1,0 +1,280 @@
+void main()
+{
+
+
+//*Sub_Tips_076
+//gosub *tip_s
+
+//■母の日記Ⅱ
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+
+	PlayBGM( 1, "msys13", 56, 0 );
+	DisableWindow();
+	DrawScene("background/ima1", 400 );
+
+//　あの子が親類会議の時に、またお魎さんの布団に潜り込もうとする￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子が親類会議の時に、またお魎さんの布団に潜り込もうとする。",
+		   NULL, "Durante il consiglio di famiglia, quella bambina si è di nuovo infilata sotto il futon di Oryou-san.", Line_Normal);
+	ClearMessage();
+
+
+//　…お魎さんはあの子のことを、目に入れても痛くないくらいに可愛がる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…お魎さんはあの子のことを、目に入れても痛くないくらいに可愛がる。",
+		   NULL, "... Oryou-san ha sempre un occhio di riguardo per lei.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　あの子がどんな無礼を働いても何も気にしない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子がどんな無礼を働いても何も気にしない。",
+		   NULL, "Qualsiasi gesto insolente compia, non le importa affatto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　まるで、あの子が猫の子か何かのように＠…文字通りの猫可愛がりだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　まるで、あの子が猫の子か何かのように。",
+		   NULL, "Come se fosse una sorta di gattino.", Line_WaitForInput);
+	OutputLine(NULL, "…文字通りの猫可愛がりだ。",
+		   NULL, " ... Oryou la tratta esattamente alla stregua di un animale domestico.", Line_Normal);
+	ClearMessage();
+
+
+//　私は母としての立場上、それを叱る＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は母としての立場上、それを叱る。",
+		   NULL, "In quanto sua madre, gliel'ho fatto notare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　お魎さんが良い良いと三度言うまでは、形式的に叱る＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お魎さんが良い良いと三度言うまでは、形式的に叱る。",
+		   NULL, "Finché Oryou-san non ha detto per tre volte che andava tutto bene, ho continuato a ripeterlo solo per formalità.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　もちろんあの子は私の叱りなどに耳は貸さない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろんあの子は私の叱りなどに耳は貸さない。",
+		   NULL, "Naturalmente, quella bambina non ha prestato ascolto a nemmeno uno dei miei rimproveri.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　……私よりもお魎さんの方が立場がずっと上であることを知っていて、そう振舞っているのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私よりもお魎さんの方が立場がずっと上であることを知っていて、そう振舞っているのだ。",
+		   NULL, "... dato che sa che Oryou-san si trova su di un livello più elevato del mio, si comporta sempre così.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そんな年令不相応な狡猾さも、私は好かない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんな年令不相応な狡猾さも、私は好かない。",
+		   NULL, "Non mi piace quella furbizia eccessiva per la sua età.", Line_Normal);
+	ClearMessage();
+
+
+//　そもそも、お魎さんに止まらず、村の老人たちはあの子を甘やかし過ぎている￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そもそも、お魎さんに止まらず、村の老人たちはあの子を甘やかし過ぎている。",
+		   NULL, "In ogni caso, non è solo Oryou-san, ma anche tutto il resto degli anziani del villaggio la vizia oltre ogni limite.", Line_Normal);
+	ClearMessage();
+
+
+	FadeOutBGM( 1, 1000, TRUE );
+	DisableWindow();
+	DrawScene("black", 400 );
+	PlayBGM( 1, "msys11", 56, 0 );
+	DrawScene("background/ta2", 400 );
+
+//　ある日、私は驚いた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　ある日、私は驚いた。",
+		   NULL, "Un giorno, sono rimasta di sasso.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　私は偶然、買い物の帰り、とある駄菓子屋の軒先にひとりいるあの子を見つけた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私は偶然、買い物の帰り、とある駄菓子屋の軒先にひとりいるあの子を見つけた。",
+		   NULL, "Ho visto quella bambina per caso fuori da un negozio di dolcetti mentre stavo tornando dalla spesa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　あの子は、おもむろにお菓子を一掴みすると、そのまま包装を剥いて口にし始めたのだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子は、おもむろにお菓子を一掴みすると、そのまま包装を剥いて口にし始めたのだ。",
+		   NULL, "L'ho vista prendere un dolcetto senza chiedere il permesso, aprirlo lì dov'era e iniziare a mangiarlo.", Line_Normal);
+	ClearMessage();
+
+
+//　お金を払おうという素振りなどなかったし、周りを伺うような仕草すらなかった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　お金を払おうという素振りなどなかったし、周りを伺うような仕草すらなかった。",
+		   NULL, "Non ha mostrato alcun segno di voler pagare e non si è nemmeno guardata intorno.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　万引きどころか、…まるで差し出されたお茶菓子でも食べるかのように、平然と口にしたのだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　万引きどころか、…まるで差し出されたお茶菓子でも食べるかのように、平然と口にしたのだ。",
+		   NULL, "È stato un gesto diverso dal taccheggio... più simile al mangiare qualcosa che le era stato offerto in precedenza.", Line_Normal);
+	ClearMessage();
+
+
+//　私があの子を叱り付ける声に、駄菓子屋の老主人が現れ、あの子をかばった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私があの子を叱り付ける声に、駄菓子屋の老主人が現れ、あの子をかばった。",
+		   NULL, "Quando mi sono avvicinata per rimproverarla, l'anziano che gestisce il negozio è uscito e l'ha difesa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　老主人は、あの子には好きに店頭のお菓子を食べてもいいと言ってあるからいいのだ、ととんでもない言い訳をした＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　老主人は、あの子には好きに店頭のお菓子を食べてもいいと言ってあるからいいのだ、ととんでもない言い訳をした。",
+		   NULL, "Il proprietario mi ha detto una cosa ridicola, ovvero che quella bambina può mangiare tutto ciò che si trova vicino all'entrata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　私はあの子が食べた分だけでも代金を払おうとしたが、老主人は頑として受け取らない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私はあの子が食べた分だけでも代金を払おうとしたが、老主人は頑として受け取らない。",
+		   NULL, "Quando ho cercato di pagare per i dolciumi che quella bambina aveva mangiato, il proprietario non ha accettato i miei soldi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　そんなやり取りをしている内に、いつの間にか年寄り連中が集まり、何だか私が悪いような感じになっていた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そんなやり取りをしている内に、いつの間にか年寄り連中が集まり、何だか私が悪いような感じになっていた。",
+		   NULL, "Nel bel mezzo della discussione, siamo stati raggiunti da altri anziani e mi sono ritrovata a essere l'unica nel torto.", Line_Normal);
+	ClearMessage();
+
+
+//　年寄りたちは、あの子にうやうやしく手を合わせて拝み、ありがたやありがたや…と何度も唱えた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　年寄りたちは、あの子にうやうやしく手を合わせて拝み、ありがたやありがたや…と何度も唱えた。",
+		   NULL, "Queste persone, poi, hanno congiunto le mani e hanno iniziato a rivolgere delle preghiere verso di lei.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　……私も古手家に生まれた人間だから、あの子がどうしてこうも特別扱いされているのかを知らないわけではない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……私も古手家に生まれた人間だから、あの子がどうしてこうも特別扱いされているのかを知らないわけではない。",
+		   NULL, "... sono nata nella famiglia Furude, perciò so bene il perché venga trattata in modo speciale.", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("black", 400 );
+
+//　私がまだ小さかった頃＠祖母によく聞かされたものだ￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　私がまだ小さかった頃。",
+		   NULL, "Quando ero giovane,", Line_WaitForInput);
+	OutputLine(NULL, "祖母によく聞かされたものだ。",
+		   NULL, " mia nonna mi raccontava sempre una storia.", Line_Normal);
+	ClearMessage();
+
+
+//　…もしもお前が生む赤ん坊が女の子だったなら＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…もしもお前が生む赤ん坊が女の子だったなら。",
+		   NULL, "Che se il figlio che avrei avuto fosse stato una femmina...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　…その子はオヤシロさまの生まれ変わりなんだよ、と￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…その子はオヤシロさまの生まれ変わりなんだよ、と。",
+		   NULL, "allora sarebbe stata l'incarnazione vivente di Oyashiro-sama.", Line_Normal);
+	ClearMessage();
+
+
+//　年寄り連中は、あの子をオヤシロさまの生まれ変わりだと信じ、ちやほやと甘やかす＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　年寄り連中は、あの子をオヤシロさまの生まれ変わりだと信じ、ちやほやと甘やかす。",
+		   NULL, "Tutti gli abitanti più anziani del villaggio credono che lei sia davvero la reincarnazione di Oyashiro-sama, e quindi la venerano a ogni occasione.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　そして甘やかすのみならず、…あの子に、オヤシロさまの生まれ変わりであるとか＠神通力が使えるだとか、他にもいろいろ怪しげな昔話などを吹き込んでいる＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　そして甘やかすのみならず、…あの子に、オヤシロさまの生まれ変わりであるとか、",
+		   NULL, "E non solo la venerano e la viziano... ma le hanno anche detto che è l'incarnazione in terra di Oyashiro-sama,", Line_WaitForInput);
+	OutputLine(NULL, "神通力が使えるだとか、他にもいろいろ怪しげな昔話などを吹き込んでいる。",
+		   NULL, " che possiede poteri divini, e tante altre storie strane del folklore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だから、自分が特別な存在だとでも思い込んでしまっているのかもしれない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから、自分が特別な存在だとでも思い込んでしまっているのかもしれない。",
+		   NULL, "È possibile che abbia iniziato a credere di essere un individuo speciale.", Line_Normal);
+	ClearMessage();
+
+
+//　あの子の教育に良くないから、変なことを吹き込まないでくださいと回りに言っているのだが、……年寄り連中に根付いた迷信は払拭しようがない＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子の教育に良くないから、変なことを吹き込まないでくださいと回りに言っているのだが、……年寄り連中に根付いた迷信は払拭しようがない。",
+		   NULL, "Ho sempre ripetuto a tutti che non era buona cosa per la sua crescita, di smetterla con quelle storie sovrannaturali... ma non c'è modo di sradicare le tradizioni che questi anziani tengono a cuore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　あの子にも、年寄り連中には耳を貸さないように言っているのだが、耳を貸さないのはむしろ私に対してだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　あの子にも、年寄り連中には耳を貸さないように言っているのだが、耳を貸さないのはむしろ私に対してだ。",
+		   NULL, "Ho detto a quella bambina di non ascoltarli, ma alla fine sono stata io a non essere più stata ascoltata.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　甘やかす村中の年寄りたちと、小言しか言わない私では、どちらに耳を貸すかは誰にもわかること￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　甘やかす村中の年寄りたちと、小言しか言わない私では、どちらに耳を貸すかは誰にもわかること。",
+		   NULL, "Tra me e tutti gli anziani del villaggio che la riempiono di complimenti, di doni, di dolcetti e quant'altro, non c'è da sorprendersi che sia io quella che viene sempre ignorata.", Line_Normal);
+	ClearMessage();
+
+
+//　……あの子がおかしくなってしまったのは、年寄り連中のせいに違いないのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　……あの子がおかしくなってしまったのは、年寄り連中のせいに違いないのだ。",
+		   NULL, "... è palese che il motivo per cui è diventata così strana siano state le credenze bislacche degli anziani del villaggio.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　妙な昔話や迷信を幼い頃から吹き込んできたに違いないのだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　妙な昔話や迷信を幼い頃から吹き込んできたに違いないのだ。",
+		   NULL, "È indubbio che l'abbiano sempre bombardata di storie e superstizioni sin dalla più tenera età.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　それさえなかったなら、あの子も、ごく普通の可愛い子だったに違いないのに￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　それさえなかったなら、あの子も、ごく普通の可愛い子だったに違いないのに！",
+		   NULL, "Se non fosse stato per loro, sono certa che anche mia figlia sarebbe stata una bambina normale!", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+
+}

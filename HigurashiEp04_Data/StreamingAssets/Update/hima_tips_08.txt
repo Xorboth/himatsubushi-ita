@@ -1,0 +1,283 @@
+void main()
+{
+
+
+//*Sub_Tips_071
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+
+	PlayBGM( 2, "lsys20", 56, 0 );
+
+
+//■調査は暗礁
+
+//「……うん＠昨日、銀座の料亭でお会いしてね＠そういう話が出たんだよ。￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44001", 256, TRUE);
+	OutputLine(NULL, "「……うん。",
+		   NULL, "\"... sì.", Line_Continue);
+	Wait( 500 );
+	OutputLine(NULL, "昨日、銀座の料亭でお会いしてね。",
+		   NULL, " L'argomento è venuto fuori ieri,", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44002", 256, TRUE);
+	OutputLine(NULL, "そういう話が出たんだよ。」",
+		   NULL, " a quel ristorante di Ginza.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("background/ke_s2", 1000 );
+
+//「別室の越権でしょ＠連中、公安に干渉し過ぎですよ＠あまり迎合すると悪い先例を残しますね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600001", 256, TRUE);
+	OutputLine(NULL, "「別室の越権でしょ。",
+		   NULL, "\"Stanno facendo il passo più lungo della gamba.", Line_Continue);
+	Wait( 1500 );
+	OutputLine(NULL, "連中、公安に干渉し過ぎですよ。",
+		   NULL, " Sono d'intralcio alla Sicurezza Pubblica.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600002", 256, TRUE);
+	OutputLine(NULL, "あまり迎合すると悪い先例を残しますね。」",
+		   NULL, " Di questo passo, creeranno un pessimo precedente.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「犬飼大臣は公安の動きに不快感を顕わにしているらしい＠多分、月曜の庁議で次官からその旨の話が出るんじゃないかと思う＠…まいったなぁ…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44003", 256, TRUE);
+	OutputLine(NULL, "「犬飼大臣は公安の動きに不快感を顕わにしているらしい。",
+		   NULL, "\"Pare che il Ministro Inukai non sia d'accordo con il modo in cui lavora la Sicurezza Pubblica.", Line_Continue);
+	Wait( 4000 );
+	OutputLine(NULL, "多分、月曜の庁議で次官からその旨の話が出るんじゃないかと思う。",
+		   NULL, " Immagino che il Viceministro dirà qualcosa in merito durante il consiglio di lunedì.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44004", 256, TRUE);
+	OutputLine(NULL, "…まいったなぁ…。」",
+		   NULL, "... accidenti...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「次官へは局長級に話し付けてもらうしかないですよ＠給料を多くもらってる人の当然の仕事ってことで。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600003", 256, TRUE);
+	OutputLine(NULL, "「次官へは局長級に話し付けてもらうしかないですよ。",
+		   NULL, "\"Possiamo solo far parlare il Direttore con il Viceministro.", Line_Continue);
+	Wait( 3200 );
+	OutputLine(NULL, "給料を多くもらってる人の当然の仕事ってことで。」",
+		   NULL, " È anche per questo che lo paghiamo fior di quattrini.\"", Line_Normal);
+	ClearMessage();
+
+
+//「まぁ、そうなると局長からは絶対に、大臣脅迫の物証を求められるよな。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44005", 256, TRUE);
+	OutputLine(NULL, "「まぁ、そうなると局長からは絶対に、大臣脅迫の物証を求められるよな。」",
+		   NULL, "\"Beh, arrivati a quel punto, gli chiederanno anche delle prove che dimostrino che il Ministro è sotto minacce.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「あの人、たまにどっちの味方かわかんなくなりますね＠うちらの味方しなくてどうすんの、っての！￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600004", 256, TRUE);
+	OutputLine(NULL, "「あの人、たまにどっちの味方かわかんなくなりますね。",
+		   NULL, "\"A volte, non capisco da che parte stia.", Line_Continue);
+	Wait( 3000 );
+	OutputLine(NULL, "うちらの味方しなくてどうすんの、っての！」",
+		   NULL, " Se non è con noi, allora con chi è?\"", Line_Normal);
+	ClearMessage();
+
+
+//「ま、多分、大臣を経由しての圧力だと思ってるけどね＠俺が次官室で脂汗かいて時間稼ぐ間に調査進めてもらうしかないよな＠…全身の汗、搾られて絞りカスになっちゃうかもしれないけどなぁ＠…で、どうなの？　調査の進行は。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44006", 256, TRUE);
+	OutputLine(NULL, "「ま、多分、大臣を経由しての圧力だと思ってるけどね。",
+		   NULL, "\"Credo che il Ministro gli metta molta pressione.", Line_Continue);
+	Wait( 4500 );
+	OutputLine(NULL, "俺が次官室で脂汗かいて時間稼ぐ間に調査進めてもらうしかないよな。",
+		   NULL, " Dovremo procedere con l'indagine mentre cerca di guadagnarci tempo tenendo impegnato il Viceministro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44007", 256, TRUE);
+	OutputLine(NULL, "…全身の汗、搾られて絞りカスになっちゃうかもしれないけどなぁ。",
+		   NULL, "... suderà sette camicie. Speriamo di non ritrovarlo secco come una mummia.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44008", 256, TRUE);
+	OutputLine(NULL, "…で、どうなの？　調査の進行は。」",
+		   NULL, " ... allora, come vanno le cose?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「期待してた濃厚なラインがことごとく外れて、正直、途方に暮れてます。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600005", 256, TRUE);
+	OutputLine(NULL, "「期待してた濃厚なラインがことごとく外れて、正直、途方に暮れてます。」",
+		   NULL, "\"Tutte le piste calde che stavo seguendo si sono rivelate dei fiaschi. In tutta onestà, brancolo nel buio.\"", Line_Normal);
+	ClearMessage();
+
+
+//「最近の大臣発言をまとめると、雛見沢ダムの計画の話が目立つっていう報告を聞いたけど、それはどうなの？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44009", 256, TRUE);
+	OutputLine(NULL, "「最近の大臣発言をまとめると、雛見沢ダムの計画の話が目立つっていう報告を聞いたけど、それはどうなの？」",
+		   NULL, "\"Alcuni rapporti dicono che le conferenze stampa del Ministro fanno dei riferimenti al Progetto della Diga di Hinamizawa. Ne sai qualcosa?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「…………ん～～～～…＠目立つって言うか、…本当に微細な程度の違和感ですね＠たまたま××県の県議連でのスピーチだったから、時事ネタを話しただけかもしれないし。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600006", 256, TRUE);
+	OutputLine(NULL, "「…………ん〜〜〜〜…。",
+		   NULL, "\"... uhm...", Line_Continue);
+	Wait( 400 );
+	OutputLine(NULL, "目立つって言うか、…本当に微細な程度の違和感ですね。",
+		   NULL, " saranno anche 'riferimenti', ma secondo me è solo la sensazione passeggera che ci sia qualcosa di strano.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600007", 256, TRUE);
+	OutputLine(NULL, "たまたま××県の県議連でのスピーチだったから、時事ネタを話しただけかもしれないし。」",
+		   NULL, "È capitato che ne parlasse durante il discorso per la Prefettura di XX, e forse si trattava solo di qualcosa di rilevante in quel momento.\"", Line_Normal);
+	ClearMessage();
+
+
+//「確か地元団体が過激に抵抗してるってヤツだっけ＠　鬼ヶ淵死守同盟＠確か、赤坂くんに調べてもらってたよね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44010", 256, TRUE);
+	OutputLine(NULL, "「確か地元団体が過激に抵抗してるってヤツだっけ？",
+		   NULL, "\"Se ben ricordo, un gruppo di cittadini sta protestando apertamente e con una certa violenza, giusto?", Line_Continue);
+	Wait( 3200 );
+	OutputLine(NULL, "　鬼ヶ淵死守同盟。",
+		   NULL, " I Guardiani di Onigafuchi.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44011", 256, TRUE);
+	OutputLine(NULL, "確か、赤坂くんに調べてもらってたよね。」",
+		   NULL, " Mi pare che ci sia Akasaka-san sul posto.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「僕は連中には、今回の事件は起こせないと踏んでます＠ですが、疑わしいところのほとんどが真っ白な以上、疑いの枠から外すわけにはいかないかもですね…＠赤坂くんからは、その可能性は否定できないとの軽い報告は受けてます。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600008", 256, TRUE);
+	OutputLine(NULL, "「僕は連中には、今回の事件は起こせないと踏んでます。",
+		   NULL, "\"Secondo me, quella gente potrebbe essere la responsabile di quel che sta succedendo.", Line_Continue);
+	Wait( 3800 );
+	OutputLine(NULL, "ですが、疑わしいところのほとんどが真っ白な以上、疑いの枠から外すわけにはいかないかもですね…。",
+		   NULL, " Anche se non possiamo puntare il dito contro qualcosa di particolarmene sospetto, escluderli del tutto potrebbe rivelarsi un errore...", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600009", 256, TRUE);
+	OutputLine(NULL, "赤坂くんからは、その可能性は否定できないとの軽い報告は受けてます。」",
+		   NULL, "Akasaka-kun ha detto in un rapporto che non può escludere che siano loro i colpevoli.\"", Line_Normal);
+	ClearMessage();
+
+
+
+//「…なら、調べて見る価値はあるんじゃないの＠　しらみ潰しなんだから、残る疑わしい団体がそこひとつなら、やるしかないでしょ。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44012", 256, TRUE);
+	OutputLine(NULL, "「…なら、調べて見る価値はあるんじゃないの？",
+		   NULL, "\"... allora vale la pena investigare.", Line_Continue);
+	Wait( 2800 );
+	OutputLine(NULL, "　しらみ潰しなんだから、残る疑わしい団体がそこひとつなら、やるしかないでしょ。」",
+		   NULL, " Stiamo passando in rassegna qualsiasi pista nella maniera più approfondita possibile, e se spunta fuori un gruppo che corrisponde al nostro identikit, allora prima o poi dovremo affrontarli.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「まぁ、調べる団体はそこだけじゃないんですがね＠　あははは＠　鬼ヶ淵と同じ程度のレベルで疑わしい団体になると、もう相当の数になりますよ＠人手も時間も残業代も全然足りません。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600010", 256, TRUE);
+	OutputLine(NULL, "「まぁ、調べる団体はそこだけじゃないんですがね？",
+		   NULL, "\"Certo, ma non sono gli unici degni di nota, ricorda?", Line_Continue);
+	Wait( 2800 );
+	OutputLine(NULL, "　あははは！",
+		   NULL, " Ahahahah!", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600011", 256, TRUE);
+	OutputLine(NULL, "鬼ヶ淵と同じ程度のレベルで疑わしい団体になると、もう相当の数になりますよ。",
+		   NULL, "Se vogliamo limitare le indagini a gruppi come quello di Onigafuchi, allora ce ne sono diversi.", Line_WaitForInput);
+
+
+//「赤坂くんからさ、もうちょっと詳しく聞いてみてよ＠…俺はちょっと要注意に感じるけどなぁ、その死守同盟。＠
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600012", 256, TRUE);
+	OutputLine(NULL, "人手も時間も残業代も全然足りません。」",
+		   NULL, " Ma non abbiamo né gli uomini, né il tempo e i soldi per approfondire.\"", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44013", 256, TRUE);
+	OutputLine(NULL, "「赤坂くんからさ、もうちょっと詳しく聞いてみてよ。",
+		   NULL, "\"Proverò a chiedere qualche dettaglio in più ad Akasaka-kun.", Line_Continue);
+	Wait( 2000 );
+
+//「彼、村人とうまく接触できたって連絡してきました＠現地の警察とも連携できてるみたいですね。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…俺はちょっと要注意に感じるけどなぁ、その死守同盟。」",
+		   NULL, " ... ho la netta sensazione che dovremo fare molta attenzione a questi Guardiani.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600013", 256, TRUE);
+	OutputLine(NULL, "「彼、村人とうまく接触できたって連絡してきました。",
+		   NULL, "\"Ha detto di aver stretto dei legami con qualche residente del villaggio.", Line_Continue);
+	Wait( 3500 );
+
+//「赤坂くんとの連絡、密にしてください＠それで、彼からの情報が引っ掛かるようであれば、増援を送ることもありということで。￥
+	OutputLine(NULL, "現地の警察とも連携できてるみたいですね。」",
+		   NULL, " E che stia collaborando con la polizia locale.\"", Line_Normal);
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44014", 256, TRUE);
+	OutputLine(NULL, "「赤坂くんとの連絡、密にしてください。",
+		   NULL, "\"Tenete un basso profilo quando parlate con Akasaka-kun.", Line_Continue);
+	Wait( 2500 );
+
+	OutputLine(NULL, "それで、彼からの情報が引っ掛かるようであれば、増援を送ることもありということで。」",
+		   NULL, " Inoltre, se venisse fuori qualcosa degno di nota nei suoi rapporti, tenetevi pronti a inviare rinforzi.\"", Line_Normal);
+	ClearMessage();
+
+//「………あ、すみません、片岡室長～＠　局長からお電話です＠こっちに回しますか？＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600014", 256, TRUE);
+	OutputLine(NULL, "「わっかりました。",
+		   NULL, "\"Ricevuto.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600015", 256, TRUE);
+	OutputLine(NULL, " ………あ、すみません、片岡室長〜！",
+		   NULL, "... ah, scusi... caposezione Kataoka~!", Line_Continue);
+	Wait( 2000 );
+	OutputLine(NULL, "　局長からお電話です。",
+		   NULL, " C'è una telefonata da parte del Direttore.", Line_WaitForInput);
+
+
+//「あ、いい、いい＠　そっち行きます＠…もしもし＠　片岡です…………。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>嘉納</color>", NULL, "<color=#f5e6d3>Kanou</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/442600016", 256, TRUE);
+	OutputLine(NULL, "こっちに回しますか？」",
+		   NULL, " Glielo passo laggiù?\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44015", 256, TRUE);
+	OutputLine(NULL, "「あ、いい、いい！",
+		   NULL, "\"Ah, no, non importa!", Line_Continue);
+	Wait( 500 );
+	OutputLine(NULL, "　そっち行きます。",
+		   NULL, " Gli rispondo io dal mio ufficio.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/kataoka44016", 256, TRUE);
+	OutputLine(NULL, "…もしもし！",
+		   NULL, " ... sì, pronto?\"", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	DrawScene("black", 1000 );
+	FadeOutBGM( 1, 1000, TRUE );
+	FadeOutBGM( 2, 1000, TRUE );
+//gosub *tip_e
+//return
+
+
+}

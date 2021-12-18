@@ -1,0 +1,311 @@
+void main()
+{
+
+
+//*Sub_Tips_067
+//gosub *tip_s
+	EnableJumpingOfReturnIcon();
+	FadeOutBGM( 0, 1000, FALSE );
+	FadeOutBGM( 1, 1000, FALSE );
+	FadeOutBGM( 2, 1000, TRUE );
+
+	DisableWindow();
+	DrawScene("black", 1000 );
+	PlayBGM( 1, "msys13", 56, 0 );
+
+//■トランクの雛
+
+//　車が止まった￥
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　車が止まった。",
+		   NULL, "L'auto si è fermata.", Line_Normal);
+	ClearMessage();
+
+
+//　だがそれ以上のことはわからなかった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だがそれ以上のことはわからなかった。",
+		   NULL, "Ma non sa nient'altro.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　なぜなら、彼は目隠しをされただけでなく、車のトランクに閉じ込められていたからだ＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　なぜなら、彼は目隠しをされただけでなく、車のトランクに閉じ込められていたからだ。",
+		   NULL, "Questo perché è sia bendato sia stato rinchiuso nel bagagliaio del veicolo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　視覚を奪われた人間がこんなにも無力だとは＠…彼も実際に経験するまで知らなかったに違いなかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　視覚を奪われた人間がこんなにも無力だとは。",
+		   NULL, "Com'è possibile che gli esseri umani diventino così indifesi quando vengono privati della vista?", Line_WaitForInput);
+	OutputLine(NULL, "…彼も実際に経験するまで知らなかったに違いなかった。",
+		   NULL, " Non l'avrebbe mai saputo se non l'avesse vissuto di persona.", Line_Normal);
+	ClearMessage();
+
+
+//　戒めを解こうとする努力が無駄であることはすぐにわかり、トランクの中の息苦しさにいつしかめまいを感じ＠…彼はこの緩慢な拷問に意識を朦朧とさせる他なかった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　戒めを解こうとする努力が無駄であることはすぐにわかり、トランクの中の息苦しさにいつしかめまいを感じ、",
+		   NULL, "Si è già accorto da un po' che è inutile cercare di sciogliere i nodi che lo tengono legato, complice la nausea che il bagagliaio gli sta facendo venire .", Line_WaitForInput);
+	OutputLine(NULL, "…彼はこの緩慢な拷問に意識を朦朧とさせる他なかった。",
+		   NULL, " Non ha altra scelta se non lasciare che questa piccola tortura gli annebbi tutti i sensi.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だから彼は、車が止まってエンジンが切られて不愉快な振動がなくなった時＠事態は何も解決していないにも関わらず、自分は解放されたのだ…と錯覚せずにはいられなかった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だから彼は、車が止まってエンジンが切られて不愉快な振動がなくなった時、",
+		   NULL, "Per questo motivo, non appena l'auto si ferma e le vibrazioni fastidiose cessano con lo spegnersi del motore,", Line_WaitForInput);
+	OutputLine(NULL, "事態は何も解決していないにも関わらず、自分は解放されたのだ…と錯覚せずにはいられなかった。",
+		   NULL, " il suo primo pensiero è che stia per essere liberato, sebbene non risolverebbe niente, in realtà.", Line_Normal);
+	ClearMessage();
+
+
+//　無論、その錯覚はすぐに覚める＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　無論、その錯覚はすぐに覚める。",
+		   NULL, "Questa sua illusione viene infranta un attimo dopo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　自分をさらった男の一人と、初めて声を聞く年配の男の会話が聞こえ、身を硬くして耳を澄ませた…￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　自分をさらった男の一人と、初めて声を聞く年配の男の会話が聞こえ、身を硬くして耳を澄ませた…。",
+		   NULL, "Tende le orecchie non appena sente conversare la voce di uno degli uomini che l'ha rapito e quella di una persona più in su con gli anni che sente per la prima volta...", Line_Normal);
+	ClearMessage();
+
+
+//「…………お疲れさんです＠雛はトランクに＠騒ぎすぎで多少衰弱してるようですが、ご命令通り傷一つ付けちゃいません。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44001", 256, TRUE);
+	OutputLine(NULL, "「…………お疲れさんです。",
+		   NULL, "\"... grazie mille.", Line_Continue);
+	OutputLine(NULL, "雛はトランクに。",
+		   NULL, " Il pulcino è nel bagagliaio.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44002", 256, TRUE);
+	OutputLine(NULL, "騒ぎすぎで多少衰弱してるようですが、ご命令通り傷一つ付けちゃいません。」",
+		   NULL, " Si è dimenato a tal punto da essere esausto, ma non c'è alcun segno sul suo corpo, come richiesto.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「…おぅおぅ、手間ぁかけましたんの。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400001", 256, TRUE);
+	OutputLine(NULL, "「…おぅおぅ、手間ぁかけましたんの。」",
+		   NULL, "\"... ohoh, deve avervi dato un gran da fare.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("white", 10 );
+	DrawScene("black", 3000 );
+
+//　トランクが開かれ、ぶわっと涼しい冷気と新鮮な空気が自分を包む￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　トランクが開かれ、ぶわっと涼しい冷気と新鮮な空気が自分を包む。",
+		   NULL, "Il bagagliaio si apre, lasciando finalmente entrare un po' d'aria fresca.", Line_Normal);
+	ClearMessage();
+
+
+//　さっきまであれほど、この息苦しいトランクを出られたらと思っていたのに、いざこうしてトランクが開け放たれると、今度は急に自分の身が不安になった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　さっきまであれほど、この息苦しいトランクを出られたらと思っていたのに、いざこうしてトランクが開け放たれると、今度は急に自分の身が不安になった。",
+		   NULL, "Nonostante avesse pensato fino a questo momento che non vedeva l'ora di uscire da questo spazio caldo e angusto, lo scatto della serratura del bagagliaio gli infonde immediatamente un senso di terrore.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　…あんなに嫌だったトランクの蓋をもう一度閉じ、彼らから遮断してくれと願ってしまうくらいに￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　…あんなに嫌だったトランクの蓋をもう一度閉じ、彼らから遮断してくれと願ってしまうくらいに。",
+		   NULL, "... quasi a fargli sperare di venire subito rinchiuso di nuovo, così da separarlo da loro.", Line_Normal);
+	ClearMessage();
+
+
+//　突然、自分の頭を誰かが撫でた＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　突然、自分の頭を誰かが撫でた。",
+		   NULL, "D'un tratto, qualcuno gli accarezza la testa.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　もちろん目隠しをされているから、頭を触れた手が、自分を撫でているのか、頭の皮を剥ぐ為に品定めをしているものなのか＠区別することができず、彼は最悪の可能性を想像して身を硬くするほかなかった…￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　もちろん目隠しをされているから、頭を触れた手が、自分を撫でているのか、頭の皮を剥ぐ為に品定めをしているものなのか、",
+		   NULL, "A causa della benda, non può capire se lo stiano davvero accarezzando o se stiano cercando di valutare quanto sarà facile togliergli lo scalpo.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "区別することができず、彼は最悪の可能性を想像して身を硬くするほかなかった…。",
+		   NULL, "Incapace di comprendere la differenza, può soltanto rimanere immobile mentre immagina il peggior esito possibile...", Line_Normal);
+	ClearMessage();
+
+
+//「……すったらん、ぁあいそうにの…＠震えとんね…＠大人しくしばらく過すがよかろ…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400002", 256, TRUE);
+	OutputLine(NULL, "「……すったらん、ぁあいそうにの…。",
+		   NULL, "\"... ma guardalo, poveretto...", Line_Continue);
+	Wait( 3200 );
+	OutputLine(NULL, "震えとんね…。",
+		   NULL, " sta tremando...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400003", 256, TRUE);
+	OutputLine(NULL, "大人しくしばらく過すがよかろ…。」",
+		   NULL, " sta' calmo...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　年配の男はそうやさしく言いながら、彼の頭をやさしく撫でた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　年配の男はそうやさしく言いながら、彼の頭をやさしく撫でた。",
+		   NULL, "Dice gentilmente l'uomo più grande, mentre continua ad accarezzargli la testa.", Line_Normal);
+	ClearMessage();
+
+
+//「ほんに辛い思いしちゃろなぁ…＠だんがな、おんめのお祖父ちゃんは優しい人だんね＠すんぐに助けてくれるだろの…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400004", 256, TRUE);
+	OutputLine(NULL, "「ほんに辛い思いしちゃろなぁ…。",
+		   NULL, "\"Dev'essere stato un bel trauma per te...", Line_Continue);
+	Wait( 2500 );
+	OutputLine(NULL, "だんがな、おんめのお祖父ちゃんは優しい人だんね。",
+		   NULL, " ma il tuo vecchio è un brav'uomo.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400005", 256, TRUE);
+	OutputLine(NULL, "すんぐに助けてくれるだろの…。」",
+		   NULL, " Verrà subito a salvarti...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　平均的な標準語でしか生活したことのない彼にとって、この年配の男の発する独特のイントネーションのなまりは非常に印象深かった＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　平均的な標準語でしか生活したことのない彼にとって、この年配の男の発する独特のイントネーションのなまりは非常に印象深かった。",
+		   NULL, "La voce di questa persona ha un accento diverso rispetto a quello del dialetto standard che ha sempre sentito parlare, e perciò gli lascia un'impressione particolare.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　だが、何を言っているのかはさっぱり理解できない￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　だが、何を言っているのかはさっぱり理解できない。",
+		   NULL, "Peccato che non riesca a raccapezzarci.", Line_Normal);
+	ClearMessage();
+
+
+//　「おんめのお祖父ちゃん」というのが、自分のお祖父ちゃんのことを指しているのだと気付くには、その言葉を頭の中で何度も反復する必要があった…￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　「おんめのお祖父ちゃん」というのが、自分のお祖父ちゃんのことを指しているのだと気付くには、その言葉を頭の中で何度も反復する必要があった…。",
+		   NULL, "Il suo \"vecchio\" deve significare suo nonno, o forse suo padre.", Line_Normal);
+	ClearMessage();
+
+
+//　やがて、頭を撫でた手が、今度は彼の目隠しに触れた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　やがて、頭を撫でた手が、今度は彼の目隠しに触れた。",
+		   NULL, "A un certo punto, la mano che lo stava accarezzando gli toglie la benda dagli occhi.", Line_Normal);
+	ClearMessage();
+
+
+//「……目隠しはまずいっすよ…＠面が割れると後々まずいです。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44003", 256, TRUE);
+	OutputLine(NULL, "「……目隠しはまずいっすよ…。",
+		   NULL, "\"... non possiamo lasciarlo al buio...", Line_Continue);
+	Wait( 1500 );
+	OutputLine(NULL, "面が割れると後々まずいです。」",
+		   NULL, " finiremo male se cade e si spacca la faccia.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「ん、…そうかの＠なんら、せめて猿ぐつわくらい外したらんな＠これぎゃあ、息もできんね…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400006", 256, TRUE);
+	OutputLine(NULL, "「ん、…そうかの。",
+		   NULL, "\"Uhm... hai ragione...", Line_Continue);
+	Wait( 2500 );
+	OutputLine(NULL, "なんら、せめて猿ぐつわくらい外したらんな。",
+		   NULL, " meglio togliergli anche il bavaglio.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400007", 256, TRUE);
+	OutputLine(NULL, "これぎゃあ、息もできんね…。」",
+		   NULL, " Altrimenti non respira...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「……叫ばれたらまずいです…＠こいつのことは俺たちに任せて下さい…。￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44004", 256, TRUE);
+	OutputLine(NULL, "「……叫ばれたらまずいです…。",
+		   NULL, "\"... se urla ci darà grane...", Line_Continue);
+	Wait( 2400 );
+	OutputLine(NULL, "こいつのことは俺たちに任せて下さい…。」",
+		   NULL, " ci pensiamo noi...\"", Line_Normal);
+	ClearMessage();
+
+
+//「ったく、気の効かんやっちゃらな！＠　…本家に惨い仕打ちはせんぎゃあちゅわっとる＠そこんとこ、肝に刻むんよ…。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400008", 256, TRUE);
+	OutputLine(NULL, "「ったく、気の効かんやっちゃらな！！",
+		   NULL, "\"... diavolo, non sapete proprio come si trattano gli ospiti!!", Line_Continue);
+	Wait( 3000 );
+	OutputLine(NULL, "　…本家に惨い仕打ちはせんぎゃあちゅわっとる。",
+		   NULL, " ... la famiglia ha detto di non fargli del male.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400009", 256, TRUE);
+	OutputLine(NULL, "そこんとこ、肝に刻むんよ…。」",
+		   NULL, " Tenetelo bene a mente...\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//「わかってます＠手荒な真似はしませんよ＠…小僧が大人しくしててくれる分にはね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44005", 256, TRUE);
+	OutputLine(NULL, "「わかってます。",
+		   NULL, "\"Sì.", Line_Continue);
+	Wait( 1500 );
+	OutputLine(NULL, "手荒な真似はしませんよ。",
+		   NULL, " Non faremo niente di stupido.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/yamaa44006", 256, TRUE);
+	OutputLine(NULL, "…小僧が大人しくしててくれる分にはね。」",
+		   NULL, " ... finché nemmeno lui ci proverà, ovviamente.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
+
+
+//　男の手が彼の頭を何度か、小突くように叩いた￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　男の手が彼の頭を何度か、小突くように叩いた。",
+		   NULL, "La mano dell'uomo gli dà un paio di colpetti sulla testa.", Line_Normal);
+	ClearMessage();
+
+
+//　自分の頭を撫でてくれた慈しみのある手とは違う、ごつごつした手＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　自分の頭を撫でてくれた慈しみのある手とは違う、ごつごつした手。",
+		   NULL, "Una mano ruvida e grezza, diversa da quella più caritatevole di prima.", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+
+//　大人しくしていれば良し＠
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　大人しくしていれば良し。",
+		   NULL, "Fa' il bravo e collabora.", GetGlobalFlag(GLinemodeSp));
+
+
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
+
+//　騒ぎ立てたら、どうなるかは保証できないぞ＠…という在り来たりな脅迫が、その手からじわりじわりと、…叩かれる頭に染み込まされていくのだった￥
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "　騒ぎ立てたら、どうなるかは保証できないぞ、",
+		   NULL, "Altrimenti, non potremo garantire cosa ti succederà.", Line_WaitForInput);
+	OutputLine(NULL, "…という在り来たりな脅迫が、その手からじわりじわりと、…叩かれる頭に染み込まされていくのだった。",
+		   NULL, " Questo cliché da film poliziesco gli viene ripetuto più e più volte.", Line_Normal);
+	ClearMessage();
+
+
+	SetValidityOfInput( FALSE );
+	Wait( 1000 );
+	SetValidityOfInput( TRUE );
+	DisableWindow();
+	FadeOutBGM( 1, 1000, TRUE );
+	DrawScene("black", 1000 );
+//gosub *tip_e
+//return
+
+
+}
