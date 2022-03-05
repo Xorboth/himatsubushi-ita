@@ -3707,7 +3707,7 @@ void main()
 //　雪絵との新しい生活だって始まったばかりだし、もうじき生まれる子どもの顔だって見たい！＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　雪絵との新しい生活だって始まったばかりだし、もうじき生まれる子どもの顔だって見たい！！",
-		   NULL, "Sto per iniziare una nuova vira insieme a Yukie, e voglio vedere in volto il nostro bambino che sta per nascere!!", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Sto per iniziare una nuova vita insieme a Yukie, e voglio vedere in volto il nostro bambino che sta per nascere!!", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
