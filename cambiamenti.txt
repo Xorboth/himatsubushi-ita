@@ -1,4 +1,4 @@
-1.0.1 [05-03-2022]:
+1.0.1 [29-05-2022]:
  - Aggiornata la traduzione, correggendo un errore segnalato
 
 1.0.0 [18-12-2021]:
