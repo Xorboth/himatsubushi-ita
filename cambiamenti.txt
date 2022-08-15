@@ -1,3 +1,6 @@
+1.0.2 [15-08-2022]:
+ - Aggiornata la traduzione, correggendo dei termini ricorrenti tra i vari capitoli e alcuni errori segnalati
+
 1.0.1 [29-05-2022]:
  - Aggiornata la traduzione, correggendo vari errori segnalati
 
