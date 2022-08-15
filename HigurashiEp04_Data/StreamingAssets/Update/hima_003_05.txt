@@ -1449,7 +1449,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300663", 256, TRUE);
 	OutputLine(NULL, "「バ、………バラバラ殺人………、」",
-		   NULL, "\"... omicidio con smembramento...\"", Line_Normal);
+		   NULL, "\"... ucciso e fatto a pezzi...\"", Line_Normal);
 	ClearMessage();
 
 

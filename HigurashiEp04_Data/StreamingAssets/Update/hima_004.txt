@@ -2783,7 +2783,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700818", 256, TRUE);
 	OutputLine(NULL, "「…………バラバラ殺人の、…前年に。」",
-		   NULL, "\"... l'anno prima dell'omicidio con smembramento.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, "\"... l'anno prima dell'omicidio in cui fecero a pezzi quell'uomo.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 

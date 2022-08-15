@@ -3699,7 +3699,7 @@ void main()
 //　反ダム戦争の最前線に立たされているという興宮警察署も、県警本部で聞いた暗闘の数々を微塵も感じさせない、退屈な雰囲気を漂わせていた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　反ダム戦争の最前線に立たされているという興宮警察署も、県警本部で聞いた暗闘の数々を微塵も感じさせない、退屈な雰囲気を漂わせていた。",
-		   NULL, "La noia, tuttavia, non conviene alla Stazione di Polizia di Okinomiya, vista la sua posizione in prima linea nella guerra alle proteste, nonché alla prevenzione dei numerosi incidenti che ho sentito al quartier generale della prefettura.", Line_Normal);
+		   NULL, "La noia, tuttavia, non conviene alla Stazione di Polizia di Okinomiya, vista la sua posizione in prima linea nella lotta alle proteste, nonché alla prevenzione dei numerosi incidenti che ho sentito al quartier generale della prefettura.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

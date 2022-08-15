@@ -75,7 +75,7 @@ void main()
 //　さらにこの暑いのにフードまで被っているのだから、真っ当な警官なら職質をしたい気持ちをそそられること間違いなしだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　さらにこの暑いのにフードまで被っているのだから、真っ当な警官なら職質をしたい気持ちをそそられること間違いなしだ。",
-		   NULL, "Ciliegina sulla torta, nonostante sia sudando, indosso una bella felpa. Qualunque agente di polizia degno di questo titolo mi fermerebbe per interrogarmi.", Line_Normal);
+		   NULL, "Ciliegina sulla torta, nonostante stia sudando, indosso una bella felpa. Qualunque agente di polizia degno di questo titolo mi fermerebbe per interrogarmi.", Line_Normal);
 	ClearMessage();
 
 
