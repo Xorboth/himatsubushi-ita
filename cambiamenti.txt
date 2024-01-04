@@ -1,3 +1,7 @@
+1.0.3 [04-01-2024]:
+ - Aggiornata la traduzione all'ultima versione della patch per Himatsubushi di 07th-Mod (commit b7d6279fac08a70138703aab2b13541ba0dddad7 del 28-12-2023)
+ - Corretti vari errori
+
 1.0.2 [15-08-2022]:
  - Aggiornata la traduzione, correggendo dei termini ricorrenti tra i vari capitoli e alcuni errori segnalati
 
