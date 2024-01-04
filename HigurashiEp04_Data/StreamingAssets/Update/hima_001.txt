@@ -1992,7 +1992,7 @@ void main()
 //　…その後のドミノ連鎖は割愛するが、最終的に内閣支持率低下＠解散総選挙＠共産勢力の拡大を許す結果となりかねない＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…その後のドミノ連鎖は割愛するが、最終的に内閣支持率低下、",
-		   NULL, "... vi risparmio i dettagli su come ciò innescherebbe una reazione a catane, ma basta dire che, alla fin fine, calerebbero anche gli indici di fiducia alla Dieta Nazionale,", GetGlobalFlag(GLinemodeSp));
+		   NULL, "... vi risparmio i dettagli su come ciò innescherebbe una reazione a catena, ma basta dire che, alla fin fine, calerebbero anche gli indici di fiducia alla Dieta Nazionale,", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "解散総選挙、",
 		   NULL, " seguiti da un voto di sfiducia e da nuove elezioni,", Line_WaitForInput);
@@ -3782,7 +3782,7 @@ void main()
 //　…狭い部屋にはぎっしりの着替えロッカーが並び、会議室というよりも、更衣室に設けられた喫煙スペースのような印象だった￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　…狭い部屋にはぎっしりの着替えロッカーが並び、会議室というよりも、更衣室に設けられた喫煙スペースのような印象だった。",
-		   NULL, "... siamo circondati da armadietti e mi viene da pensare che si tratti di uno spogliatoio adebito anche a sala fumatorii", Line_Normal);
+		   NULL, "... siamo circondati da armadietti e mi viene da pensare che si tratti di uno spogliatoio adebito anche a sala fumatori.", Line_Normal);
 	ClearMessage();
 
 
@@ -4308,7 +4308,7 @@ void main()
 		   NULL, " Se ti vedono con me, sta' sicuro che faranno di tutto per ostacolare il tuo lavoro.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 11, "ps3/s05/11/100700030", 256, TRUE);
 	OutputLine(NULL, "月並みですがね、こいつを身に付けておいて下さい。」",
-		   NULL, " Forse èSarà anche un cliché, ma mettiti questi.\"", Line_Normal);
+		   NULL, "Sarà anche un cliché, ma mettiti questi.\"", Line_Normal);
 	ClearMessage();
 
 //　大石氏は、野球帽とサングラスとマスクという、あからさまに不審な小道具を用意してくれた＠
