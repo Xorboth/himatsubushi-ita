@@ -24,7 +24,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>Irie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s20/10/441000048", 256, TRUE);
 	OutputLine(NULL, "「だいぶ血圧もよくなってきましたよ。",
-		   NULL, "\"La sua pressione sangiugna è migliorata.", Line_Continue);
+		   NULL, "\"La sua pressione sanguigna è migliorata.", Line_Continue);
 	Wait( 2000 );
 	OutputLine(NULL, "そのお年でこれだけの回復力があるのは…いやいや、感服するばかりです。",
 		   NULL, " Il fatto che si riprenda così in fretta alla sua età ha un che di strabiliante.", GetGlobalFlag(GLinemodeSp));
@@ -249,7 +249,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#d7e6de>お魎</color>", NULL, "<color=#d7e6de>Oryou</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 17, "ps3/s20/17/442300009", 256, TRUE);
 	OutputLine(NULL, "「あれの母親もな、…しょんがないやっちゃったんね。",
-		   NULL, "\"Sua madre è fatta della stessa parta... non ascolta mai cosa le viene detto.", Line_Continue);
+		   NULL, "\"Sua madre è fatta della stessa pasta... non ascolta mai cosa le viene detto.", Line_Continue);
 	Wait( 3500 );
 	OutputLine(NULL, "よう似とる！」",
 		   NULL, " La mela non cade lontano dall'albero!\"", GetGlobalFlag(GLinemodeSp));

@@ -9,7 +9,7 @@ void dialog000()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>室長</color>", NULL, "<color=#f5e6d3>Capo</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104200017", 256, TRUE);
 	OutputLine(NULL, "残る各職員は担当団体ごとに本件との関連を調査。",
-		   NULL, "Il resto di voi investighi su ogni pista legata a questo caso in base all'unità a cui siete assegnati.", Line_WaitForInput);
+		   NULL, " Il resto di voi investighi su ogni pista legata a questo caso in base all'unità a cui siete assegnati.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104200018", 256, TRUE);
 	OutputLine(NULL, "最近動きが不穏な特殊ラインは集中的にやれ！",
 		   NULL, " Concentratevi su recenti attività sovversive!", GetGlobalFlag(GLinemodeSp));

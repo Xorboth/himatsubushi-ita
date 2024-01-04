@@ -581,7 +581,7 @@ void main()
 	OutputLine(NULL, "今後とも、在来線に変わらぬご愛顧をよろしくお願いいたします。",
 		   NULL, " Speriamo che continuerete a utilizzare i nostri servizi lungo le altre linee.", Line_WaitForInput);
 	OutputLine(NULL, "興宮交通」",
-		   NULL, " Trasposti Okinomiya.\"", GetGlobalFlag(GLinemodeSp));
+		   NULL, " Trasporti Okinomiya.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -670,7 +670,7 @@ void main()
 //　降り立ってすぐに、バスの車内とはまったく異なる…厳しい大気が全身に襲い掛かってきた￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　降り立ってすぐに、バスの車内とはまったく異なる…厳しい大気が全身に襲い掛かってきた。",
-		   NULL, "Appena metto piede fuori dal bus, vengo accolto dall'atmosfera opprimente e in profondo contrasto con quella che c'era all'interno.", Line_Normal);
+		   NULL, "Appena metto piede fuori dal bus, vengo accolto da un'atmosfera opprimente e in profondo contrasto con quella che c'era all'interno.", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();
@@ -1105,7 +1105,7 @@ void main()
 //　病院で受けた何度かの診察でも、男の子である確証は得られなかった＠……男の子であるか否かは結局、性器が撮影できるか否かでしかないからだ￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　病院で受けた何度かの診察でも、男の子である確証は得られなかった。",
-		   NULL, "Nonostante i numerosi esami ospedalieri, non sappiamo ancora con certezza se sarà un maschio o una femmina.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Nonostante i numerosi esami ospedalieri, non sappiamo ancora con certezza se sarà un maschio o una femmina", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "……男の子であるか否かは結局、性器が撮影できるか否かでしかないからだ。",
 		   NULL, "... in fondo, l'unico modo per stabilirne il sesso sarà ottenere un'immagine nitida della zona inguinale.", Line_Normal);
@@ -2094,7 +2094,7 @@ void main()
 //　いつの間にか、敵地に単身訪れたという緊張感は、嘘のようになくなっていた＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　いつの間にか、敵地に単身訪れたという緊張感は、嘘のようになくなっていた。",
-		   NULL, "La tensione che percepivo per trovarmi di colpo in territorio nemico è completamente svanita, come se non ci fosse neanche mai stata.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "La tensione che percepivo nel trovarmi di colpo in territorio nemico è completamente svanita, come se non ci fosse neanche mai stata.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
@@ -2207,7 +2207,7 @@ void main()
 		   NULL, " ... sarà lo stesso Makino che era segnato come revisore di conti dei Guardiani di Onigafuchi?)", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "が案内してくれる場所はどこも絶景で、観光の目的で訪れているわけではない私でも、うなるような景色が溢れていた。",
-		   NULL, "mi mostra un sacco di luoghi che mozzano il fiato da quanto sono belli. Sebbene non sia venuto qui per fare il turista, devo ammettere di essere molto colpito.", Line_Normal);
+		   NULL, " mi mostra un sacco di luoghi che mozzano il fiato da quanto sono belli. Sebbene non sia venuto qui per fare il turista, devo ammettere di essere molto colpito.", Line_Normal);
 	ClearMessage();
 
 

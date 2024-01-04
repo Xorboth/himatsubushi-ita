@@ -106,7 +106,7 @@ void main()
 //　こういう風に説明すれば、あなたたちにも私の気持ちが少しは伝わるのだろうか￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　こういう風に説明すれば、あなたたちにも私の気持ちが少しは伝わるのだろうか？",
-		   NULL, "Se dovessi spiegarlo a parole, riuscireste a capire un po' meglio come mi sento?", Line_Normal);
+		   NULL, "In questi termini, riuscite a capire un po' meglio come mi sento?", Line_Normal);
 	ClearMessage();
 
 	DisableWindow();

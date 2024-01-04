@@ -55,7 +55,7 @@ void main()
 //　新しい良いものを次々と取り入れて発展する経済と産業＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　新しい良いものを次々と取り入れて発展する経済と産業。",
-		   NULL, "Stiamo raccogliendi i frutti delle nuove aziende e delle industrie.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Stiamo raccogliendo i frutti delle nuove aziende e delle industrie.", GetGlobalFlag(GLinemodeSp));
 
 
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }

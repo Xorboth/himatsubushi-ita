@@ -358,7 +358,7 @@ void main()
 //　近所とか川向こうとか、そういう距離の問題じゃなくて、ね￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　近所とか川向こうとか、そういう距離の問題じゃなくて、ね？",
-		   NULL, "In fondo, non è certo tutto limitato a un problema di spazio, che sia il vicinato o dall'altra parte del fiume, non trovate?", Line_Normal);
+		   NULL, "In fondo, non è soltanto un mero problema di spazio, che sia il vicinato o dall'altra parte del fiume, non trovate?", Line_Normal);
 	ClearMessage();
 
 

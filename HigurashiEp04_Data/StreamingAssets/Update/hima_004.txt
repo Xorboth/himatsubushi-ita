@@ -1838,10 +1838,15 @@ void main()
 	DisableWindow();
 	DrawSceneWithMask("flashback/mo2", "right", 0, 0, 300 );
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 2){ModCallScriptSection("hima_004_vm0x_n01","dialog001");}
-	if(GetGlobalFlag(GCensor) <= 1){ModCallScriptSection("hima_004_vm00_n01","dialog001");}
-	//VoiceMatchingEnd
+//「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に＠岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3006", 256, TRUE);
+	OutputLine(NULL, "「で、その富竹氏の恋仲の女性が岐阜の山中で焼死体に。",
+		   NULL, "\"Tra le montagne della prefettura di Gifu, fu anche ritrovato il cadavere bruciato della donna con cui Tomitake aveva una relazione.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi3007", 256, TRUE);
+	OutputLine(NULL, "岐阜県警さんがあんまり協力的じゃなかったもんで、こっちはあまりよく状況を知らないんですがね。」",
+		   NULL, " La prefettura stessa non fu mai molto collaborativa, quindi non ne so molto, purtroppo.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 
@@ -2108,10 +2113,33 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
-	//VoiceMatching
-	if(GetGlobalFlag(GCensor) >= 4){ModCallScriptSection("hima_004_vm0x_n01","dialog002");}
-	if(GetGlobalFlag(GCensor) <= 3){ModCallScriptSection("hima_004_vm00_n01","dialog002");}
-	//VoiceMatchingEnd
+//「……………性的な変質者の犯行？￥
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#797d8a>赤坂</color>", NULL, "<color=#797d8a>Akasaka</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 13, "ps3/s05/13/101300719", 256, TRUE);
+	OutputLine(NULL, "「……………性的な変質者の犯行？」",
+		   NULL, "\"... qualche segno che indicasse uno stupro?\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("background/aka2", 400 );
+
+//「司法解剖の結果、性的暴行の痕跡は認められませんでした＠/
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3008", 256, TRUE);
+	OutputLine(NULL, "「司法解剖の結果、性的暴行の痕跡は認められませんでした。",
+		   NULL, "\"Secondo l'autopsia, non ci fu alcun motivo di crederlo.", GetGlobalFlag(GLinemodeSp));
+
+	PlaySE( 3, "wa_025", 56, 64 );
+
+//……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹＠意図的に臓器を引きずり出して、四方に散らして見せました。＠
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 11, "org/ooishi3009", 256, TRUE);
+	OutputLine(NULL, "……わかったのは、薬物で昏睡させられてから、あの場所へ運ばれ、腹部を切開、開腹。",
+		   NULL, "... quello che sappiamo è che fu resa incosciente da una specie di droga, portata in quel posto e poi eviscerata con un taglio all'addome.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 11, "org/ooishi3010", 540, TRUE);
+	OutputLine(NULL, "意図的に臓器を引きずり出して、四方に散らして見せました。」",
+		   NULL, " I suoi organi interni furono asportati e sparsi dappertutto.\"", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }
 
 
 //「…………昏睡＠　…では、開腹は死後ではなく？＠
@@ -2246,12 +2274,12 @@ void main()
 
 //「雛見沢村のお祭りの『綿流し』ってのはそもそも、……ワタ流し、つまり、臓物流しから転じたものらしいんです＠……何でも、人食い鬼たちが、犠牲者をバラして、内蔵を川に捨てた…というところから転じたらしいんですよ。＠
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/100700774", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi3011", 256, TRUE);
 	OutputLine(NULL, "「雛見沢村のお祭りの「綿流し」ってのはそもそも、……ワタ流し、つまり、臓物流しから転じたものらしいんです。",
 		   NULL, "\"Il festival del villaggio di Hinamizawa--Watanagashi... il 'Cotone alla deriva', si può leggere anche come 'Viscere alla deriva'.", GetGlobalFlag(GLinemodeSp));
 
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#a59da9>大石</color>", NULL, "<color=#a59da9>Ooishi</color>", NULL, Line_ContinueAfterTyping); }
-	ModPlayVoiceLS(4, 11, "ps2/11/100700775", 540, TRUE);
+	ModPlayVoiceLS(4, 11, "org/ooishi3012", 256, TRUE);
 	OutputLine(NULL, "……何でも、人食い鬼たちが、犠牲者をバラして、内蔵を川に捨てた…というところから転じたらしいんですよ。」",
 		   NULL, "... pare che derivi dalla tradizione dei demoni mangiauomini di sbranare le loro vittime per poi gettarne gli organi nel fiume.\"", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n", Line_ContinueAfterTyping); }

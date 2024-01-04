@@ -3635,7 +3635,7 @@ void main()
 	ModPlayVoiceLS(4, 0, "ps3/s05/00/104400053", 256, TRUE);
 	OutputLine(NULL, "麻雀やってからすっかり雰囲気が大人びちまったな！",
 		   NULL, " è da quando ci siamo seduti al tavolo che sembri un uomo diverso!", Line_WaitForInput);
-	ModPlayVoiceLS(4, 0, "ps3/s05/00/104400054", 256, TRUE);
+	ModPlayVoiceLS(4, 0, "org/s05/00/104400054_org", 256, TRUE);
 	OutputLine(NULL, "　会った時のあのオドオドしたあんたはどこ行っちゃったんだよ。」",
 		   NULL, " Chissà dov'è finito quel giovane esitante di quando ci siamo conosciuti.\"", Line_Normal);
 	ClearMessage();

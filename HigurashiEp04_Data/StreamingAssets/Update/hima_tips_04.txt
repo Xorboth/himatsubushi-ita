@@ -33,7 +33,7 @@ void main()
 //　なぜなら、彼は目隠しをされただけでなく、車のトランクに閉じ込められていたからだ＠
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　なぜなら、彼は目隠しをされただけでなく、車のトランクに閉じ込められていたからだ。",
-		   NULL, "Questo perché è sia bendato sia stato rinchiuso nel bagagliaio del veicolo.", GetGlobalFlag(GLinemodeSp));
+		   NULL, "Questo perché è sia bendato, sia stato rinchiuso nel bagagliaio del veicolo.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { ClearMessage(); } else { OutputLineAll(NULL, "\n\n", Line_ContinueAfterTyping); }
 
 
@@ -74,7 +74,7 @@ void main()
 //　自分をさらった男の一人と、初めて声を聞く年配の男の会話が聞こえ、身を硬くして耳を澄ませた…￥
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "　自分をさらった男の一人と、初めて声を聞く年配の男の会話が聞こえ、身を硬くして耳を澄ませた…。",
-		   NULL, "Tende le orecchie non appena sente conversare la voce di uno degli uomini che l'ha rapito e quella di una persona più in su con gli anni che sente per la prima volta...", Line_Normal);
+		   NULL, "Tende le orecchie non appena sente la voce di uno degli uomini che l'ha rapito e quella di una persona più in su con gli anni che sente per la prima volta...", Line_Normal);
 	ClearMessage();
 
 

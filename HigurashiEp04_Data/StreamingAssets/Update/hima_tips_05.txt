@@ -304,7 +304,7 @@ void main()
 		   NULL, " Di certo non morirai.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400018", 256, TRUE);
 	OutputLine(NULL, "…お前の祖父さんが渋りよったん、耳たぶのひとつも切り落とさなきゃならんかったんけー、…やらんくて済んで助かりよんよ…。",
-		   NULL, " ... ma se tuo nonno vorrà fare il duro, forse finiremo per doverti tagliarti un orecchio... e spero che non ce ne sia bisogno.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " ... ma se tuo nonno vorrà fare il duro, forse finiremo per doverti tagliare un orecchio... e spero che non ce ne sia bisogno.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>男</color>", NULL, "<color=#f5e6d3>Uomo</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 14, "ps3/s20/14/443400019", 256, TRUE);
 	OutputLine(NULL, "本家はこうと決めたら…鬼やんね。",

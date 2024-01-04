@@ -289,7 +289,7 @@ void main()
 		   NULL, "\"Chiamami quando vuoi...", Line_Continue);
 	Wait( 1000 );
 	OutputLine(NULL, "私がだめな時はお父さんが相手をしてくれるでしょう。",
-		   NULL, " se non mi sentirò bene io, ti farò parlare con papà.", GetGlobalFlag(GLinemodeSp));
+		   NULL, " se non dovessi sentirmi bene, ti farò parlare con papà.", GetGlobalFlag(GLinemodeSp));
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>雪絵</color>", NULL, "<color=#f5e6d3>Yukie</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 0, "ps3/s20/00/yukie44019", 256, TRUE);
 	OutputLine(NULL, "…もっとも、お父さんが相手では、あなたのことだから、電話先でも直立不動でしゃべっていそう。",
